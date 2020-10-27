@@ -1,0 +1,121 @@
+* {
+    font-family: "open sans", sans-serif;
+  }
+  
+  *:active,
+  *:focus {
+    outline: none;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    margin: 0 auto;
+    background: white;
+  }
+  
+  .scrollAnim {
+    height: 100%;
+    opacity: 0;
+    transition: 2s;
+    display: flex;
+    padding: 0 120px;
+  }
+  .scrollAnim:nth-child(2) {
+    background: pink;
+  }
+  .scrollAnim:nth-child(4) {
+    background: pink;
+  }
+  .scrollAnim .content {
+    margin: auto;
+  }
+  .scrollAnim.anim {
+    opacity: 2;
+  }
+  h1,
+  h2 {
+    display: block;
+    color: blue;
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+    transition: 0.9s;
+    padding-left: 0;
+    font-family: "open sans", sans-serif;
+  }
+  .anim h1,
+  .anim h2 {
+    transition-delay: 0.1s;
+  }
+  
+  p {
+    font-size: 0.9em;
+    transition: all 0.8s;
+  }
+  .anim-top {
+    transform: translate(0, 80px);
+  }
+  .anim-left {
+    transform: translate(-150px, 0);
+  }
+  .anim-right {
+    transform: translate(150px, 0);
+  }
+  
+  .anim-bottom {
+    transform: translate(0, -80px);
+  }
+  
+  .anim .anim-top {
+    transform: translate(0, 0);
+  }
+  .anim .anim-left {
+    transform: translate(0, 0);
+  }
+  .anim .anim-right {
+    transform: translate(0, 0);
+  }
+  .anim .anim-bottom {
+    transform: translate(0, 0);
+  }
+  
+  /* .steps{
+      width: 100%;
+      margin: auto;
+  }
+   */
+  
+  .scroller {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInOut {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
