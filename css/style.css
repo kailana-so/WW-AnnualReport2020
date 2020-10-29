@@ -29,23 +29,14 @@ body {
     right: 0;
     background-color: #fff;
     border-bottom-left-radius: 50%;
-    /* width: 57px;
-    height: 62px; */
     padding: 20px;
     padding-left: 25px;
 }
 
-
-/* 
-section {
-  width: 100vw;
-  background-color: transparent;
-} */
-
 article {
     padding: 120px 0;
     display: flex;
-    flex-flow: wrap;
+    margin: auto;
 }
 
 .row {
@@ -53,23 +44,23 @@ article {
     flex-direction: row;
     margin: auto;
     padding: 48px;
+    border: 1px solid blue;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 48px;
+    padding-top: 48px;
+    border: 1px solid orange;
+    width: 1028px;
 }
-
-
-/* div {
-  border: 2px solid orange;
-} */
 
 .body-item {
     width: 653px;
     margin: auto;
+    margin-top: 48px;
+    border: 1px solid pink;
 }
 
 .box-item {
@@ -94,6 +85,26 @@ article {
     margin-top: 48px;
 }
 
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: -5px;
+}
+
+.link div:nth-child(2) {
+    margin-left: 15px;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
 .image {
     height: 234px;
     width: 234px;
@@ -102,6 +113,7 @@ article {
 .img-row {
     display: flex;
     flex-direction: row;
+    padding-left: 35%;
 }
 
 figure {
@@ -130,6 +142,18 @@ figcaption {
     transform: translate(795px, 135px);
 }
 
+#svgbg5 {
+    transform: translate(650px, -100px);
+}
+
+#svgbg6 {
+    transform: translate(450px, 1850px);
+}
+
+#svgbg7 {
+    transform: translate(-180px, 250px);
+}
+
 
 /* TYPE */
 
@@ -138,7 +162,7 @@ h1 {
     font-weight: 700;
     font-size: 120px;
     margin: 24px 0;
-    transition: 0.9s;
+    transition: 1s;
     display: block;
     padding: 0;
     line-height: 120%;
@@ -153,7 +177,7 @@ h1 {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
     transition: 0.9s;
-    margin: 24px 0;
+    margin: 24px -5px;
     line-height: 120%;
 }
 
@@ -419,9 +443,14 @@ p {
 /* IMAGES */
 
 #ceo {
-    background-image: url('/imgs/ceo.jpg');
+    background-image: url(../imgs/ceo.jpg);
+    background-size: cover;
 }
 
 #pres {
-    background-image: url('/imgs/pres.jpg');
+    background-image: url(../imgs/pres.jpg);
+    background-size: cover;
 }
+
+
+/* bottons */
