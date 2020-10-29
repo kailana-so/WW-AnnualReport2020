@@ -35,6 +35,7 @@ body {
 
 article {
     padding: 120px 0;
+    padding-bottom: 240px;
     display: flex;
     margin: auto;
 }
@@ -105,9 +106,13 @@ a {
     color: #fff;
 }
 
-.image {
+.sq-image {
     height: 234px;
     width: 234px;
+}
+
+.f-image {
+    width: 1010px height: 427px;
 }
 
 .img-row {
@@ -308,13 +313,6 @@ p {
     transform: translate(0, 0);
 }
 
-
-/* .steps{
-	width: 100%;
-	margin: auto;
-}
- */
-
 .scroller {
     position: fixed;
     top: 10px;
@@ -351,42 +349,7 @@ p {
 
 .fade-in {
     transform-origin: left;
-    animation: show 3s both;
-}
-
-
-/* .appear {display:inline-block;} */
-
-.f1 {
-    animation-delay: 1s;
-}
-
-.f2 {
-    animation-delay: 2s;
-}
-
-.f3 {
-    animation-delay: 3s;
-}
-
-.f4 {
-    animation-delay: 4s;
-}
-
-.f5 {
-    animation-delay: 5s;
-}
-
-.f6 {
-    animation-delay: 6s;
-}
-
-.f7 {
-    animation-delay: 7s;
-}
-
-.f8 {
-    animation-delay: 8.5s;
+    animation: show 2s both;
 }
 
 @keyframes show {
@@ -449,6 +412,11 @@ p {
 
 #pres {
     background-image: url(../imgs/pres.jpg);
+    background-size: cover;
+}
+
+#board {
+    background-image: url(../imgs/board.png);
     background-size: cover;
 }
 
