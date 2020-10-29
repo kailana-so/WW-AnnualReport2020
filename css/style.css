@@ -112,7 +112,9 @@ a {
 }
 
 .f-image {
-    width: 1010px height: 427px;
+    width: 1010px;
+    height: 427px;
+    margin-top: 48px;
 }
 
 .img-row {
@@ -276,10 +278,9 @@ p {
     opacity: 1;
 }
 
-
-/* .anim h1, .anim h2{
-  transition-delay: 0.9s;
-} */
+.anim.body-item .anim.box-item {
+    transition-delay: 1s;
+}
 
 .anim-top {
     transform: translate(0, 80px);
@@ -298,7 +299,7 @@ p {
 }
 
 .anim .anim-top {
-    transform: translate(0, 0);
+    transform: translate(0, 100);
 }
 
 .anim .anim-left {
