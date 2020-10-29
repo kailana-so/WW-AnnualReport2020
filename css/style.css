@@ -29,7 +29,10 @@ body {
     right: 0;
     background-color: #fff;
     border-bottom-left-radius: 50%;
-    padding: 10px;
+    /* width: 57px;
+    height: 62px; */
+    padding: 20px;
+    padding-left: 25px;
 }
 
 
@@ -55,8 +58,8 @@ article {
 .column {
     display: flex;
     flex-direction: column;
-    padding: 48px;
     margin: auto;
+    padding: 48px;
 }
 
 
@@ -75,11 +78,11 @@ article {
 }
 
 .left {
-    padding-right: 55%;
+    padding-right: 35%;
 }
 
 .right {
-    padding-left: 55%;
+    padding-left: 35%;
 }
 
 .logo {
@@ -88,20 +91,33 @@ article {
 
 .icon {
     height: 34px;
+    margin-top: 48px;
 }
 
 .image {
-    border: 3px dashed yellow;
     height: 234px;
     width: 234px;
-    margin-left: 24px;
+}
+
+.img-row {
+    display: flex;
+    flex-direction: row;
+}
+
+figure {
+    padding: 0;
+    margin: 10px;
+    float: right;
 }
 
 figcaption {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    /* font-size: 16px; */
+    color: #58585B;
 }
+
+
+/* BACKGROUNDS */
 
 #b01 {
     position: absolute;
@@ -121,9 +137,11 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 120px;
-    margin: 0;
+    margin: 24px 0;
     transition: 0.9s;
     display: block;
+    padding: 0;
+    line-height: 120%;
 }
 
 .t-outlined {
@@ -135,6 +153,8 @@ h1 {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
     transition: 0.9s;
+    margin: 24px 0;
+    line-height: 120%;
 }
 
 h2 {
@@ -220,6 +240,7 @@ p {
 
 .scrollAnim .content {
     margin: auto;
+    padding-top: 48px;
 }
 
 .scrollAnim.anim {
@@ -354,17 +375,26 @@ p {
 }
 
 
-/* ----------------------- MENU ICON ------------------------ */
+/* MENU ICON  */
 
 .bar1,
-.bar2,
 .bar3 {
     width: 35px;
-    height: 5px;
+    height: 3px;
     background-color: #58595B;
     border-radius: 3px;
     transition: 0.4s;
-    margin: 10px;
+    margin-bottom: 6px;
+}
+
+.bar2,
+.bar4 {
+    width: 30px;
+    height: 3px;
+    background-color: #58595B;
+    border-radius: 3px;
+    transition: 0.4s;
+    margin-bottom: 6px;
 }
 
 .change .bar1 {
@@ -379,4 +409,19 @@ p {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-5px, -5px);
     transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.change .bar4 {
+    opacity: 0;
+}
+
+
+/* IMAGES */
+
+#ceo {
+    background-image: url('/imgs/ceo.jpg');
+}
+
+#pres {
+    background-image: url('/imgs/pres.jpg');
 }
