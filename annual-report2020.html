@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,182 @@
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <header>
+        <div onclick="menuAnimation(this)" id="menu-open">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <!-- MENU ASIDE -->
+    <aside>
+
+    </aside>
+    <section id="section1">
+        <div id="b01">
+            <!-- inline svg bgs-->
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1700 2350">
+                <g id="svgbg1" display="inline">
+                    <path fill="#009ACD" d="M1700 0H0V942V2307.62C7.29712 2307.23 14.5857 2306.79 21.874 2306.34L22.2241 2306.32L22.2395 2306.32C38.7964 2305.3 55.3518 2304.28 71.9976 2303.93L78.0635 2303.8L84.7041 2303.65L85.2295 2303.64C116.421 2302.93 147.902 2302.22 178.528 2303.73C195.42 2304.56 211.615 2307.66 227.777 2310.75L227.902 2310.78C234.565 2312.05 241.224 2313.33 247.924 2314.44C255.5 2315.7 262.968 2317.11 270.436 2318.52C285.232 2321.31 300.013 2324.1 315.596 2325.71C360.448 2330.35 398.55 2323.33 430.752 2311.48C449.121 2304.73 466.978 2297.76 484.833 2290.79L484.874 2290.78L484.986 2290.73C504.749 2283.02 524.513 2275.3 544.97 2267.88C595.232 2249.66 639.719 2247.39 700.429 2259.96C719.455 2263.9 737.637 2268.46 755.826 2273.03L755.868 2273.04L755.937 2273.06C766.63 2275.74 777.326 2278.42 788.198 2280.98C798.198 2283.33 808.121 2285.75 818.047 2288.17L818.075 2288.18L818.108 2288.19C844.686 2294.67 871.282 2301.16 899.412 2306.35C958.719 2317.29 995.865 2311.44 1024.31 2288.16C1031.21 2282.51 1037.1 2276.67 1042.99 2270.83C1048.71 2265.16 1054.43 2259.48 1061.08 2253.99L1062.75 2252.6L1062.76 2252.59C1075.07 2242.4 1087.59 2232.04 1104.45 2223.04C1129.75 2209.54 1162.22 2209.76 1188.59 2223.06C1203.89 2230.77 1217.52 2239.32 1227.59 2248.25C1237.98 2257.46 1247.28 2266.86 1256.58 2276.26C1265.31 2285.08 1274.04 2293.9 1283.66 2302.56C1297.12 2314.69 1312.1 2326.72 1330.29 2337.82C1351.64 2350.83 1379.05 2352.55 1413.24 2344.91C1420.76 2343.23 1428.31 2341.4 1434.7 2339.14C1453.07 2332.66 1471.36 2326.12 1488.75 2319.24C1500.83 2314.46 1512.64 2309.57 1524.44 2304.68L1524.53 2304.64L1524.59 2304.62C1540.46 2298.04 1556.34 2291.47 1572.86 2285.16C1610.33 2270.85 1653.01 2266.48 1700 2272.17V942V0Z"/>
+                </g>
+            <g id="svgbg2" display="inline">
+                <path d="M85.2125 1088.68C80.8008 1088.44 76.3947 1088.21 71.9976 1087.99C55.3466 1087.17 38.786 1084.8 22.2241 1082.43C14.8191 1081.37 7.41371 1080.31 1.80081e-05 1079.39L0.00597361 -99L1700 -98.9999L1700 1162C1653.01 1175.26 1610.33 1165.09 1572.86 1131.75C1556.31 1117.02 1540.42 1101.68 1524.53 1086.34C1512.69 1074.91 1500.86 1063.49 1488.75 1052.32C1471.36 1036.28 1453.07 1021.04 1434.7 1005.94C1428.31 1000.67 1420.76 996.401 1413.24 992.487C1379.05 974.688 1351.64 978.689 1330.29 1009.03C1312.1 1034.87 1297.13 1062.93 1283.66 1091.18C1274.04 1111.37 1265.31 1131.92 1256.58 1152.47C1247.28 1174.38 1237.98 1196.29 1227.59 1217.75C1217.52 1238.56 1203.89 1258.49 1188.59 1276.47C1162.22 1307.44 1129.75 1307.97 1104.45 1276.5C1087.59 1255.52 1075.07 1231.37 1062.75 1207.62L1061.08 1204.39C1054.43 1191.58 1048.71 1178.36 1042.99 1165.14C1037.1 1151.53 1031.21 1137.92 1024.31 1124.75C995.865 1070.5 958.719 1056.86 899.412 1082.36C871.261 1094.47 844.646 1109.6 818.047 1124.72C808.121 1130.36 798.198 1136 788.197 1141.48C777.289 1147.46 766.556 1153.74 755.826 1160.01C737.637 1170.65 719.455 1181.28 700.43 1190.47C639.719 1219.76 595.232 1214.47 544.97 1172C524.461 1154.66 504.648 1136.64 484.834 1118.62C466.978 1102.37 449.121 1086.13 430.753 1070.39C398.55 1042.8 360.448 1026.42 315.596 1037.24C300.013 1041 285.232 1047.5 270.436 1054C262.97 1057.28 255.501 1060.56 247.924 1063.5C241.182 1066.11 234.482 1069.1 227.777 1072.09C211.615 1079.31 195.421 1086.54 178.528 1088.47C147.896 1091.98 116.409 1090.32 85.2125 1088.68Z" fill="url(#paint0_linear)"/>
+                <defs>
+                    <linearGradient id="paint0_linear" x1="1666" y1="396" x2="62.0001" y2="398" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#00A3D8"/>
+                        <stop offset="1" stop-color="#48BEE3"/>
+                    </linearGradient>
+                </defs>
+            </g>
+            <g id="svgbg3" display="inline"  opacity="1">
+                <path d="M1614.79 803.676C1619.2 803.444 1623.61 803.212 1628 802.995C1644.65 802.173 1661.21 799.801 1677.78 797.429C1685.18 796.37 1692.59 795.31 1700 794.388L1699.99 -384L0.000110808 -384L0.000110809 877C46.9934 890.263 89.6741 880.087 127.139 846.75C143.686 832.021 159.578 816.681 175.471 801.338C187.306 789.915 199.142 778.489 211.249 767.316C228.637 751.28 246.933 736.045 265.299 720.938C271.695 715.673 279.241 711.401 286.763 707.487C320.948 689.688 348.365 693.689 369.711 724.026C387.901 749.874 402.875 777.929 416.339 806.184C425.962 826.374 434.689 846.923 443.416 867.471C452.721 889.38 462.024 911.285 472.412 932.754C482.484 953.559 496.107 973.492 511.411 991.469C537.784 1022.44 570.246 1022.97 595.545 991.502C612.409 970.524 624.933 946.369 637.247 922.619L638.922 919.388C645.57 906.576 651.29 893.358 657.01 880.14C662.899 866.529 668.788 852.92 675.691 839.754C704.135 785.505 741.281 771.858 800.588 797.361C828.739 809.469 855.354 824.598 881.953 839.716C891.879 845.358 901.802 850.999 911.803 856.482C922.712 862.462 933.444 868.739 944.174 875.014C962.363 885.651 980.546 896.284 999.571 905.466C1060.28 934.759 1104.77 929.472 1155.03 886.997C1175.54 869.664 1195.35 851.64 1215.17 833.617C1233.02 817.374 1250.88 801.131 1269.25 785.391C1301.45 757.795 1339.55 741.418 1384.4 752.243C1399.99 756.001 1414.77 762.496 1429.56 769C1437.03 772.281 1444.5 775.563 1452.08 778.497C1458.82 781.107 1465.52 784.098 1472.22 787.092C1488.39 794.308 1504.58 801.538 1521.47 803.47C1552.1 806.976 1583.59 805.318 1614.79 803.676Z" fill="#009ACD"/>
+            </g>
+            <g id="svgbg4" display="inline" width="925" height="894" viewBox="0 0 925 894">
+                <g style="mix-blend-mode:hard-light" opacity="0.5">
+                    <path d="M303.599 249.998C303.599 249.998 417.705 249.998 455.74 130.827C493.775 11.6568 623.095 -18.1359 714.42 11.6567C805.745 41.4494 851.347 123.379 866.561 145.724C881.776 168.068 912.204 249.998 1041.52 272.343C1170.84 294.687 1094.77 413.858 1094.77 413.858C1094.77 413.858 1056.74 488.34 927.418 465.995C798.098 443.651 836.133 525.58 858.954 555.373C881.776 585.166 938.848 685.736 839.917 737.873C740.985 790.01 638.31 719.233 524.203 659.647C410.097 600.062 394.883 644.751 394.883 644.751C394.883 644.751 371.624 667.369 402.49 711.785C467.17 804.906 379.669 875.644 250.349 890.541C121.029 905.437 37.3511 860.748 6.88305 763.922C-23.5851 667.096 52.5255 607.51 128.596 585.166C204.667 562.821 235.095 495.788 204.667 406.41C174.239 317.032 212.314 257.446 303.599 249.998Z" fill="url(#pattern0)"/>
+                </g>
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="0.8" height="1.3">
+                        <use xlink:href="#image0" transform="translate(0 -0.306047) scale(0.000345662)"/>                
+                    </pattern>
+                <image id="image0" width="2893" height="4096" href="imgs/caleb.jpg">
+                </defs>
+            </g>
+            </svg>
+        </div>
+        <article class="white">
+            <div class="scrollAnim anim column">
+                <div>
+                    <img src="imgs/logo.png" class="logo">
+                    <h1 class="anim-left">Annual Review</h1>
+                    <h1 class="anim-top t-outlined">2020</h1>
+                </div>
+            </div>
+        </article>
+        </article>
+        <div class="scrollAnim column">
+            <div class="left box-item">
+                <div class="content">
+                    <p class="anim-left white">Wellways acknowledges Aboriginal and Torres Strait Islander People as the traditional owners and custodians of the land on which we live, work and play and pays respect to their Elders past, present and future.</p>
+                    <p class="anim-left white">
+                        We are committed to inclusive communities, workplaces, policies and services for people of all backgrounds, genders, sexualities, cultures, bodies and abilities. </p>
+                    <div class="icon fade-in">
+                        <img src="imgs/flag-aboriginal.png">
+                        <img src="imgs/flag-tsi.png">
+                        <img src="imgs/flag-lgbtqi.png">
+                        <img src="imgs/flag-t.png">
+                    </div>
+                </div>
+            </div>
+            <div class="right box-item">
+                <div>
+                    <p class="anim-right white">We can arrange interpreter services for most languages, please call 1300 111 400 to arrange an interpreter or translation for this publication.</p>
+                    <p class="anim-right white">
+                        We’ve achieved so much over the last financial year that we wanted to share some of those achievements. Thank you to the participants, staff and partners who helped create this report.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </article>
+        <article>
+            <article class="scrollAnim column">
+                <div class="column">
+                    <h3 class="anim-top">Chairperson and CEO report</h3>
+                    <div class="body-item">
+                        <div class="row">
+                            <div class="image"></div>
+                            <div class="image"></div>
+                        </div>
+                        <p class="fade-in">Our annual review for 2019-2020 looks back on a period before an Australian summer of devastating bushfires and a period of shutdowns during the global COVID-19 pandemic that has in the second half of this year affected our services,
+                            staff and our participants in so many ways. So much has changed, and yet the principles underlying our approach as a services provider and advocacy organisation remain the same. We believe our organisational principles will
+                            help us interpret and respond to a new post-COVID environment where old patterns of thinking and behaviour are rightly being challenged.
+                        </p>
+                        <p>
+                            Wellways has happily risen to the challenges of COVID-19. Our staff throughout our 16 regions, some working remotely and others delivering important face-to-face services, have shown remarkable commitment in often difficult circumstances. Importantly,
+                            we have been guided throughout this time by our organisational vision for an inclusive community where everyone can imagine and achieve their hopes and potential.
+                        </p>
+                        <p>
+                            We have been agile enough to embrace the digital space, while at the same time acknowledge that we have a role as an essential service to continue our frontline supports for some of Australia’s most marginalised people, many with severe and enduring mental
+                            health issues or challenging disabilities. We made sure we implemented precautionary training for staff, systems to distribute personal protective equipment around the country and regularly maintaining communications channels
+                            with participants, staff, the sectors in which we work and the wider community.
+                        </p>
+                        <p>
+                            We have always been an organisation available for anyone in need of our support and the services we provide. The last 12 months has proven our ability to expand our reach and grow our programs. The COVID-19 environment has opened opportunities, including
+                            expanding our programs and services into the digital space. But our expansion this year began well before any of us considered we were facing a global health crisis.
+                        </p>
+                        <p>
+                            The Board and the Executive Leadership Team have overseen an exciting period of growth. Last year Wellways announced our successful bid to become a Carer Gateway Service Provider across Queensland and the New South Wales region of South West Sydney and
+                            Nepean Blue Mountains. In April, this year we launched our Wellways Carer Gateway operations, reaching out to over 700,000 informal, unpaid carers. Our support for carers has not stopped at State or regional boarders, with
+                            Wellways now playing a pivotal role to the further development of Carer Gateway services across the rest of the country.
+                        </p>
+                        <p>
+                            This year Wellways also experienced success in our bids to manage six Prevention and Recovery Care (PARC) services in Melbourne’s north western and eastern suburbs. Our successes strengthen our partnerships with North Western Mental Health and Eastern
+                            Health, some of the biggest health service providers in Victoria. Excitingly, the PARC services commenced under Wellways management from midnight 30 June 2020.
+                        </p>
+                        <p>
+                            We also find ourselves in a fortunate financial position during this review period. With our ongoing focus in strengthening our responses to tender opportunities, we have increased our revenue by $30 million. A key contributor to this revenue increase
+                            was our continued ability to attract substantial block funding from Commonwealth, State and Territory governments to deliver transformative services, including BeyondBlue’s NewAccess counselling service and its suicide prevention
+                            program, The Way Back Support Service.
+                        </p>
+                        <p>
+                            Wellways is a truly diversified organisation, providing programs and services across a range of areas and communities. What has particularly struck us as we reflect on the past year is the vital contribution each and every staff member makes towards delivering
+                            our organisational strategy.
+                        </p>
+                        <p>
+                            In December 2019, we undertook our first Best Practice Australia annual employee engagement survey. We were very pleased with the results, especially in learning 62 percent of staff believe Wellways is a truly great place to work and that we have a strong
+                            workplace culture of ambition.
+                        </p>
+                        <p>
+                            In releasing the survey results, we have made commitments to our staff that we believe our workplace culture can be further strengthened and more than ambitious. We look to instituting a culture of success in the coming years. We want to truly listen,
+                            hear and act on our staff voice. We have laid down critical foundations across the organisation to ensure our management teams constructively listens and responds to the concerns of their staff. Where training needs have been
+                            identified at the organisation and occupational levels, we have sought to provide staff with suitable opportunities. And where improvements can be made, we will seek to implement change.
+                        </p>
+                        <p>
+                            Advocacy is also a key pillar of our strategic plan and over the past year we have significantly expanded our reach and influence through our communication and responses to government inquiries and reviews, including the Productivity Commission inquiry
+                            into Mental Health, the Victorian Royal Commission into Mental Health and the Federal and Victorian parliamentary inquiries into homelessness. This year we also saw the launch of our innovative public mental health campaign,
+                            #StampedeStigma and the appointment of the campaign’s inaugural ambassador, comedian and media personality, Anthony “Lehmo” Lehmann. In its first year the campaign reached out to over 2 million Australians.
+                        </p>
+                        <p>
+                            On a personal note, as the new Chair, appointed in June 2020 and the new Chief Executive Officer, appointed in December 2019, our priorities have been to engage with our staff and stakeholders. We have both benefited from succeeding leaders who have left
+                            Wellways well placed and in an extraordinarily strong position. To Paul Montgomery, our former Chair of the Board and Elizabeth Crowther, our former CEO, we say thank you and wish them both all the best with their future endeavours.
+                        </p>
+                        <p>
+                            In a year like we have just experienced, it is hard to list all those we need to thank. From the perspective as Chair of the Board thanks go to our Directors and Co-opted Independent Committee members for their support and attention to detail and as CEO
+                            thanks must be passed on to our management team and all staff at Wellways for their continued dedication to our mission.
+                        </p>
+                        <p>
+                            Moving forward into a new year, Wellways will only continue to grow. Just as being defined as an essential service has characterised us this year, 2020-2021 will be a year where we strengthen our accountability for achieving the commitments in our Reconciliation
+                            Action Plan as we advance reconciliation and our relationships with Aboriginal and Torres Strait Islander peoples. It will be a year where we will seek to not only stamp out mental health stigma and discrimination, but we will
+                            also further address discrimination and inequality experienced by the LGBTIQ+ community. It will also be a year for seeking out collaborations with more individuals and organisations who can help us reach more people, more
+                            effectively and strengthen how our services are delivered in a COVID impacted environment. It’s a year we look forward to.
+                        </p>
+                        <p>
+                            Michael Gorton and Laura Collister Board Chair and CEO October 2020.</p>
+                    </div>
+                </div>
+            </article>
+        </article>
+    </section>
+
+
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25009291-4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-25009291-4');
     </script>
 </body>
+
 </html>
