@@ -35,7 +35,7 @@ body {
 
 article {
     padding: 120px 0;
-    padding-bottom: 240px;
+    padding-bottom: 120px;
     display: flex;
     margin: auto;
 }
@@ -55,6 +55,10 @@ article {
     padding-top: 48px;
     border: 1px solid orange;
     width: 1028px;
+}
+
+.hero {
+    margin-bottom: 120px;
 }
 
 .body-item {
@@ -143,6 +147,12 @@ figcaption {
     width: 100%;
     height: 100%;
     z-index: -10;
+}
+
+section {
+    background: linear-gradient(#48bfe31e, #fff);
+    position: relative;
+    z-index: -8;
 }
 
 #svgbg4 {
@@ -267,6 +277,10 @@ p {
     opacity: 0;
     transition: 2s;
     width: 1024px;
+}
+
+.delay {
+    animation-delay: 2s;
 }
 
 .scrollAnim .content {
@@ -420,6 +434,3 @@ p {
     background-image: url(../imgs/board.png);
     background-size: cover;
 }
-
-
-/* bottons */
