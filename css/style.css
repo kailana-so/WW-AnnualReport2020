@@ -34,7 +34,6 @@ body {
 }
 
 article {
-    padding: 120px 0;
     padding-bottom: 120px;
     display: flex;
     margin: auto;
@@ -52,13 +51,17 @@ article {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-top: 48px;
+    /* padding-top: 48px; */
     border: 1px solid orange;
     width: 1028px;
 }
 
 .hero {
-    margin-bottom: 120px;
+    padding: 240px 0;
+}
+
+.title {
+    margin-left: -75px;
 }
 
 .body-item {
@@ -107,7 +110,6 @@ a {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #fff;
 }
 
 .sq-image {
@@ -149,8 +151,8 @@ figcaption {
     z-index: -10;
 }
 
-section {
-    background: linear-gradient(#48bfe31e, #fff);
+#section01 {
+    background: linear-gradient(#48bfe376, #fff);
     position: relative;
     z-index: -8;
 }
@@ -183,6 +185,7 @@ h1 {
     display: block;
     padding: 0;
     line-height: 120%;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, .25);
 }
 
 .t-outlined {
@@ -195,7 +198,7 @@ h1 {
     -webkit-text-stroke-color: #fff;
     transition: 0.9s;
     margin: 24px -5px;
-    line-height: 120%;
+    line-height: 68px;
 }
 
 h2 {
@@ -210,6 +213,7 @@ h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 46px;
+    text-shadow: 2px 4px 0 rgba(255, 255, 255, .25);
 }
 
 h4 {
@@ -285,7 +289,7 @@ p {
 
 .scrollAnim .content {
     margin: auto;
-    padding-top: 48px;
+    border: 1px solid pink;
 }
 
 .scrollAnim.anim {

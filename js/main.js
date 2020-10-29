@@ -1,3 +1,4 @@
+// SCROLL
 window.addEventListener("scroll", () => {
     let page = this;
     let pageTop = this.scrollY;
