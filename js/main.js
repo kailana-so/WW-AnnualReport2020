@@ -1,7 +1,7 @@
 window.addEventListener("scroll", () => {
     let page = this;
     let pageTop = this.scrollY;
-    let pageHeight = this.outerHeight / 1.5;
+    let pageHeight = this.outerHeight / 2;
 
     let frames = document.querySelectorAll(".scrollAnim");
     frames.forEach((frame) => {
@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
 
         if (
             pageTop >= frameTop - pageHeight &&
-            pageTop < frameTop + frameHeight / 1
+            pageTop < frameTop + frameHeight / 0.8
         ) {
             frame.classList.add("anim");
             // document.getElementById('box1').classList.add('fade-in');

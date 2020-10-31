@@ -482,8 +482,8 @@ figcaption {
 .scrollAnim {
     height: 100%;
     opacity: 0;
-    transition: 1.5s;
-    transition-delay: 0.8s all;
+    transition: 1.8s;
+    transition-delay: 1.2s all;
     /* margin: 24px auto; */
 }
 
