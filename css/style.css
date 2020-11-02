@@ -261,19 +261,15 @@ figcaption {
     line-height: 130%;
 }
 
-.p-48 {
+.pt-48 {
     margin-top: 48px;
 }
 
 .p-96 {
-    padding: 96px;
+    padding: 96px 0 0 0;
 }
 .p-120 {
-    padding: 120px;
-}
-
-.bottom-360 {
-    padding-top: 360px;
+    padding: 120px 0 0 0;
 }
 
 .pl-167 {
