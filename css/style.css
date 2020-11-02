@@ -21,7 +21,7 @@ light-teal: #53C2CF
 
 body {
     margin: 0;
-    border: 3px dotted lawngreen;
+    /* border: 3px dotted lawngreen; */
 }
 
 
@@ -85,19 +85,6 @@ p {
     margin: 12px 0;
 }
 
-.quote {
-    width: 586px;
-    justify-content: center;
-}
-
-.quote-p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    transition: all 0.8s;
-    color: #9064AA line-height: 150%;
-    margin: 12px 0;
-}
 
 h5 {
     font-family: 'Poppins', sans-serif;
@@ -108,9 +95,9 @@ h5 {
     text-align: center;
 }
 
-div {
+/* div {
     border: 2px dotted darkgoldenrod;
-}
+} */
 
 #menu-open {
     position: absolute;
@@ -128,7 +115,7 @@ article {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    border: 2px dashed darkgreen;
+    /* border: 2px dashed darkgreen; */
 }
 
 .row {
@@ -136,7 +123,7 @@ article {
     flex-direction: row;
     margin: auto;
     padding: 48px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .column {
@@ -144,7 +131,7 @@ article {
     flex-direction: column;
     padding: 48px;
     padding-top: 48px;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     /* width: 1028px; */
     /* width: 100vw; */
 }
@@ -173,7 +160,7 @@ article {
 .body-item {
     width: 653px;
     margin: auto;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,11 +265,18 @@ figcaption {
     margin-top: 48px;
 }
 
+.p-96 {
+    padding: 96px;
+}
 .p-120 {
     padding: 120px;
 }
 
-.p-167 {
+.bottom-360 {
+    padding-top: 360px;
+}
+
+.pl-167 {
     padding-left: 167px;
 }
 
@@ -414,9 +408,10 @@ figcaption {
 }
 
 #ndis {
-    height: 998px;
+    height: 100vh;
     background-image: url(../imgs/Kylie.png);
     background-size: cover;
+
 }
 
 #gsman {
@@ -608,10 +603,10 @@ figcaption {
 .scrollAnim:first-of-type {
     margin-top: 0;
 }
-
+/* 
 .scrollAnim .content {
     border: 1px solid pink;
-}
+} */
 
 .center {
     margin: auto;
@@ -747,4 +742,71 @@ figcaption {
 
 .change .bar4 {
     opacity: 0;
+}
+
+/* QUOTE */
+
+.quote {
+    display: flex;
+    margin: auto;
+    width:700px;
+    margin: 95px auto;
+}
+#quote-marks {
+    transform: translate(630px, 15px);
+}
+.quote-p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    transition: all 0.8s;
+    color: #9064AA;
+    line-height: 150%;
+    margin: 12px 0;
+    text-shadow: 2px 1px 2px #48bfe376;
+}
+
+.highlight{
+    display:inline-block;
+    width: max-content;
+    background-size: 200% auto; 
+    background-image: linear-gradient(to right,#fff 50%,#48bfe376 50%);
+    background-position: 0% 0;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.highlight2{
+    display:inline-block;
+    width: max-content;
+    background-size: 200% auto; 
+    background-image: linear-gradient(to right,#fff 50%,#48bfe376 50%);
+    background-position: 0% 0;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.highlight3{
+    display:inline-block;
+    width: max-content;
+    background-size: 200% auto; 
+    background-image: linear-gradient(to right,#fff 50%,#48bfe376 50%);
+    background-position: 0% 0;
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.highlight.active,
+.highlight2.active,
+.highlight3.active {
+   animation-name: highlight;
+}
+
+@keyframes highlight {
+    from {background-position: 0% 0;}
+    to {background-position: -100% 0;}
 }

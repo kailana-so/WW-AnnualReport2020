@@ -59,20 +59,27 @@ $(window).scroll(function() {
     }
 });
 
-// CIRCULAR
+// CIRCULAR CHARTS
 
 window.addEventListener("scroll", function(stats) {
 
+    
     var firstChart = document.getElementsByClassName("circular-chart")[0];
     var secondChart = document.getElementsByClassName("circular-chart")[1];
     var thirdChart = document.getElementsByClassName("circular-chart")[2];
+    var fourthChart = document.getElementsByClassName("circular-chart")[3];
+    var fifthChart = document.getElementsByClassName("circular-chart")[4];
+    var sixthChart = document.getElementsByClassName("circular-chart")[5];
 
     var firstCircle = document.getElementsByClassName("circle")[0];
     var secondCircle = document.getElementsByClassName("circle")[1];
     var thirdCircle = document.getElementsByClassName("circle")[2];
+    var fourthCircle = document.getElementsByClassName("circle")[3];
+    var fifthCircle = document.getElementsByClassName("circle")[4];
+    var sixthCircle = document.getElementsByClassName("circle")[5];
 
     var rect = firstChart.getBoundingClientRect();
-    console.log(rect)
+    console.log(rect);
 
     rect = secondChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
@@ -87,54 +94,47 @@ window.addEventListener("scroll", function(stats) {
     if (rect.bottom <= window.innerHeight) {
         thirdCircle.classList.add("onScroll");
     }
-});
 
-$(document).ready(function() {
-    $('.headline-large').each((i, e) => {
-        $(e).addClass(`headerToAnimate${i}`);
+    rect = fourthChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        fourthCircle.classList.add("onScroll");
+    }
 
-        const ar = $(e).text().split(' ');
-        let html = '';
-        for (let word of ar) {
-            html += `<span class="word" style="display:inline-block;line-height:1em;opacity:0;">${word}&nbsp;</span>`
-        }
+    rect = fifthChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        fifthCircle.classList.add("onScroll");
+    }
 
-        $(e).html(html);
-    });
-
-    window.addEventListener('scroll', function(e) {
-        $('.headline-large').each((i, e) => {
-            if (isOnScreen($(`.headerToAnimate${i}`))) {
-                anime({
-                    loop: false,
-                    targets: `.headerToAnimate${i} .word`,
-                    translateY: [50, 0],
-                    translateZ: 0,
-                    opacity: [0, 1],
-                    easing: 'easeOutExpo',
-                    duration: 400,
-                    delay: (el, i) => 300 + 30 * i,
-                });
-
-                $(e).removeClass(`headerToAnimate${i}`);
-            }
-        });
-    });
-
-    function isOnScreen(elem) {
-        if (elem.length == 0) {
-            return;
-        }
-
-        const topOfElement = elem.offset().top;
-        const bottomOfElement = elem.offset().top + elem.outerHeight();
-        const bottomOfScreen = $(window).scrollTop() + $(window).innerHeight() - 50;
-        const topOfScreen = $(window).scrollTop();
-
-        if ((bottomOfScreen > topOfElement) && (topOfScreen < bottomOfElement)) {
-            return true;
-        }
-
-        return false;
+    rect = sixthChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        sixthCircle.classList.add("onScroll");
     }
 });
+
+// hightlights
+
+highlight();
+
+$(window).on("scroll", function(){
+  highlight();
+});
+
+function highlight(){
+  var scroll = $(window).scrollTop();
+  var height = $(window).height();
+
+  $(".highlight, .highlight2, .highlight3").each(function(){
+    var pos = $(this).offset().top;
+    if (scroll+height >= pos) {
+      $(this).addClass("active");
+    }
+    
+    else
+    {
+      $(this).removeClass("active");
+      $(this).addClass("disactivated");
+    }
+    console.log(pos);
+    console.log(scroll);
+  });
+}  
