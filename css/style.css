@@ -72,6 +72,7 @@ h4 {
     font-weight: 400;
     font-size: 24px;
     transition: all 0.8s;
+    margin: 12px 0;
 }
 
 p {
@@ -81,6 +82,30 @@ p {
     transition: all 0.8s;
     color: #58585B;
     line-height: 150%;
+    margin: 12px 0;
+}
+
+.quote {
+    width: 586px;
+    justify-content: center;
+}
+
+.quote-p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    transition: all 0.8s;
+    color: #9064AA line-height: 150%;
+    margin: 12px 0;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.9s;
+    color: #58585B;
+    text-align: center;
 }
 
 div {
@@ -222,12 +247,18 @@ a {
     border-radius: 5px;
 }
 
-.img-row {
+.img-row-right {
     display: flex;
     flex-direction: row;
     padding-left: 336px;
     padding-right: 0;
     width: 400px;
+}
+
+.w-sm-img {
+    height: 272px;
+    width: 402px;
+    margin-left: 10px;
 }
 
 figure {
@@ -385,6 +416,16 @@ figcaption {
 #ndis {
     height: 998px;
     background-image: url(../imgs/Kylie.png);
+    background-size: cover;
+}
+
+#gsman {
+    background-image: url(../imgs/gsman.jpg);
+    background-size: cover;
+}
+
+#gswoman {
+    background-image: url(../imgs/gswoman.jpg);
     background-size: cover;
 }
 
@@ -559,7 +600,7 @@ figcaption {
 .scrollAnim {
     height: 100%;
     opacity: 0;
-    transition: 1.s;
+    transition: 1.3s;
     transition-delay: 1.2s all;
     /* margin: 24px auto; */
 }
@@ -655,7 +696,7 @@ figcaption {
 /* FADES */
 
 .fade-in {
-    animation: show 1s both;
+    animation: show 1.5s both;
 }
 
 @keyframes show {
