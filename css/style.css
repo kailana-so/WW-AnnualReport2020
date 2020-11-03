@@ -593,39 +593,6 @@ figcaption {
     margin-left: 83px;
 }
 
-
-/* 
-.open-right {
-    animation: open-right 3s;
-}
-
-@keyframes open-right {
-    from {
-        width: 0px;
-        height: 328px;
-    }
-    to {
-        width: 486px;
-        height: 328px;
-    }
-}
-
-.open-bottom {
-    animation: open-bottom 3s;
-}
-
-@keyframes open-bottom {
-    from {
-        width: 486px;
-        height: 0;
-    }
-    to {
-        width: 486px;
-        height: 328px;
-    }
-} */
-
-
 /* STATS COUNTER */
 
 #counter-section-container {
@@ -700,6 +667,10 @@ figcaption {
 
 .circular-chart.green .circle {
     stroke: #84C446;
+}
+
+.circular-chart.teal .circle {
+    stroke: #00B3C3;
 }
 
 .percentage {
