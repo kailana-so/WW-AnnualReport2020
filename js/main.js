@@ -26,12 +26,15 @@ window.addEventListener("scroll", (text) => {
 });
 
 // STATS COUNTER 0
-var a = 0;
-var b = 0;
-$(window).scroll(function() {
 
-    var oTop = $('#counter-box2').offset().top - window.innerHeight;
-    var aTop = $('#counter-box6').offset().top / window.innerHeight;
+$(window).scroll(function() {
+    var a = 0;
+    var b = 0;
+    var c = 0;
+
+    var oTop = $('#counter-box1, #counter-box2, #counter-box3').offset().top - window.innerHeight;
+    var mTop = $('#counter-box4, #counter-box5, #counter-box6, #counter-box7').offset().top - window.innerHeight;
+    var nTop = $('#counter-box9').offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
         $('.counter').each(function() {
             var $this = $(this),
@@ -43,7 +46,7 @@ $(window).scroll(function() {
                 },
 
                 {
-                    duration: 9950,
+                    duration: 2950,
                     delay: 6000,
                     easing: 'swing',
                     step: function() {
@@ -59,7 +62,7 @@ $(window).scroll(function() {
         });
         a = 1;
     }
-    if (b == 0 && $(window).scrollTop() > aTop) {
+    if (b == 0 && $(window).scrollTop() > mTop) {
         $('.counter1').each(function() {
             var $this = $(this),
                 countTo = $this.attr('data-number');
@@ -70,7 +73,7 @@ $(window).scroll(function() {
                 },
 
                 {
-                    duration: 8950,
+                    duration: 2950,
                     delay: 200,
                     easing: 'swing',
                     step: function() {
@@ -84,8 +87,36 @@ $(window).scroll(function() {
 
                 });
         });
-        b = 1;
+        b = 1; 
     }
+    if (c == 0 && $(window).scrollTop() > nTop) {
+        $('.counter2').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-number');
+            $({
+                countNum: $this.text()
+            }).animate({
+                    countNum: countTo
+                },
+
+                {
+                    duration: 2950,
+                    delay: 200,
+                    easing: 'swing',
+                    step: function() {
+                        //$this.text(Math.ceil(this.countNum));
+                        $this.text(Math.ceil(this.countNum).toLocaleString('en'));
+                    },
+                    complete: function() {
+                        $this.text(Math.ceil(this.countNum).toLocaleString('en'));
+                        //alert('finished');
+                    }
+
+                });
+        });
+        c = 1; 
+    }
+    
 });
 
 // CIRCULAR CHARTS

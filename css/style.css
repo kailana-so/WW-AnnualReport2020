@@ -379,6 +379,32 @@ figcaption {
     transform: translate(762px, 2974px);
 }
 
+
+#b04 {
+    position: absolute;
+    width: 100%;
+    z-index: -8;    
+    height: 6400px;
+    background: linear-gradient(#fff,#00a6b87b, #00a6b84f, #00a6b814, #fff);
+}
+
+#section04 {
+    margin: auto;
+}
+#svgbg18 {
+    transform: translate(635px, 120px);
+}
+#svgbg19 {
+    transform: translate(462px, 374px);
+}
+#svgbg20 {
+    transform: translate(762px, 774px);
+}
+
+#svgbg21 {
+    transform: translate(262px, 1274px);
+}
+
 /* COLOURS */
 
 .d-blue {
@@ -498,7 +524,7 @@ figcaption {
 
 /* STAT BOXES */
 
-.box {
+.box { 
     width: 486px;
     /* height: 328px; */
     background-color: #fff;
@@ -842,11 +868,10 @@ figcaption {
 
 .quote {
     display: flex;
-    margin: auto;
-    width: 55%;
+    width: 45%;
     margin: 5% auto;
     padding: 5%;
-    background-image: linear-gradient(#b497c73a, white);
+    background-image: linear-gradient(#b497c73a,#b497c717);
 }
 
 #quote-marks {
