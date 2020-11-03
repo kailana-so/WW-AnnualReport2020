@@ -25,11 +25,13 @@ window.addEventListener("scroll", (text) => {
     });
 });
 
-// STATS COUNTER
+// STATS COUNTER 0
 var a = 0;
+var b = 0;
 $(window).scroll(function() {
 
     var oTop = $('#counter-box2').offset().top - window.innerHeight;
+    var aTop = $('#counter-box6').offset().top / window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
         $('.counter').each(function() {
             var $this = $(this),
@@ -41,7 +43,7 @@ $(window).scroll(function() {
                 },
 
                 {
-                    duration: 7950,
+                    duration: 9950,
                     delay: 6000,
                     easing: 'swing',
                     step: function() {
@@ -57,6 +59,33 @@ $(window).scroll(function() {
         });
         a = 1;
     }
+    if (b == 0 && $(window).scrollTop() > aTop) {
+        $('.counter1').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-number');
+            $({
+                countNum: $this.text()
+            }).animate({
+                    countNum: countTo
+                },
+
+                {
+                    duration: 8950,
+                    delay: 200,
+                    easing: 'swing',
+                    step: function() {
+                        //$this.text(Math.ceil(this.countNum));
+                        $this.text(Math.ceil(this.countNum).toLocaleString('en'));
+                    },
+                    complete: function() {
+                        $this.text(Math.ceil(this.countNum).toLocaleString('en'));
+                        //alert('finished');
+                    }
+
+                });
+        });
+        b = 1;
+    }
 });
 
 // CIRCULAR CHARTS
@@ -70,6 +99,10 @@ window.addEventListener("scroll", function(stats) {
     var fourthChart = document.getElementsByClassName("circular-chart")[3];
     var fifthChart = document.getElementsByClassName("circular-chart")[4];
     var sixthChart = document.getElementsByClassName("circular-chart")[5];
+    var seventhChart = document.getElementsByClassName("circular-chart")[6];
+    var eighthChart = document.getElementsByClassName("circular-chart")[7];
+    var ninthChart = document.getElementsByClassName("circular-chart")[8];
+
 
     var firstCircle = document.getElementsByClassName("circle")[0];
     var secondCircle = document.getElementsByClassName("circle")[1];
@@ -77,6 +110,9 @@ window.addEventListener("scroll", function(stats) {
     var fourthCircle = document.getElementsByClassName("circle")[3];
     var fifthCircle = document.getElementsByClassName("circle")[4];
     var sixthCircle = document.getElementsByClassName("circle")[5];
+    var seventhCircle = document.getElementsByClassName("circle")[6];
+    var eighthCircle = document.getElementsByClassName("circle")[7];
+    var ninthCircle = document.getElementsByClassName("circle")[8];
 
     var rect = firstChart.getBoundingClientRect();
     console.log(rect);
@@ -108,6 +144,21 @@ window.addEventListener("scroll", function(stats) {
     rect = sixthChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
         sixthCircle.classList.add("onScroll");
+    }
+
+    rect = seventhChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        seventhCircle.classList.add("onScroll");
+    }
+
+    rect = eighthChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        eighthCircle.classList.add("onScroll");
+    }
+
+    rect = ninthChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        ninthCircle.classList.add("onScroll");
     }
 });
 
