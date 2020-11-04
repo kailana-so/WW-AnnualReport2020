@@ -133,6 +133,19 @@ window.addEventListener("scroll", function(stats) {
     var seventhChart = document.getElementsByClassName("circular-chart")[6];
     var eighthChart = document.getElementsByClassName("circular-chart")[7];
     var ninthChart = document.getElementsByClassName("circular-chart")[8];
+    var tenChart = document.getElementsByClassName("circular-chart")[9];
+    var elevenChart = document.getElementsByClassName("circular-chart")[10];
+    var twelveChart = document.getElementsByClassName("circular-chart")[11];
+    var thirteenChart = document.getElementsByClassName("circular-chart")[12];
+    var fourteenChart = document.getElementsByClassName("circular-chart")[13];
+    var fifteenChart = document.getElementsByClassName("circular-chart")[14];
+    var sixteenChart = document.getElementsByClassName("circular-chart")[15];
+    var seventeenChart = document.getElementsByClassName("circular-chart")[16];
+    var eighteenChart = document.getElementsByClassName("circular-chart")[17];
+    var ninteenChart = document.getElementsByClassName("circular-chart")[18];
+    var twentyChart = document.getElementsByClassName("circular-chart")[19];
+    var twentyoneChart = document.getElementsByClassName("circular-chart")[20];
+
 
 
     var firstCircle = document.getElementsByClassName("circle")[0];
@@ -144,6 +157,18 @@ window.addEventListener("scroll", function(stats) {
     var seventhCircle = document.getElementsByClassName("circle")[6];
     var eighthCircle = document.getElementsByClassName("circle")[7];
     var ninthCircle = document.getElementsByClassName("circle")[8];
+    var tenCircle = document.getElementsByClassName("circle")[9];
+    var elevenCircle = document.getElementsByClassName("circle")[10];
+    var twelveCircle = document.getElementsByClassName("circle")[11];
+    var thirteenCircle = document.getElementsByClassName("circle")[12];
+    var fourteenCircle = document.getElementsByClassName("circle")[13];
+    var fifteenCircle = document.getElementsByClassName("circle")[14];
+    var sixteenCircle = document.getElementsByClassName("circle")[15];
+    var seventeenCircle = document.getElementsByClassName("circle")[16];
+    var eighteenCircle = document.getElementsByClassName("circle")[17];
+    var ninteenCircle = document.getElementsByClassName("circle")[18];
+    var twentyCircle = document.getElementsByClassName("circle")[19];
+    var twentyoneCircle = document.getElementsByClassName("circle")[20];
 
     var rect = firstChart.getBoundingClientRect();
     console.log(rect);
@@ -156,41 +181,83 @@ window.addEventListener("scroll", function(stats) {
     if (rect.bottom <= window.innerHeight) {
         secondCircle.classList.add("onScroll");
     }
-
     rect = thirdChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
         thirdCircle.classList.add("onScroll");
     }
-
     rect = fourthChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
         fourthCircle.classList.add("onScroll");
     }
-
     rect = fifthChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
         fifthCircle.classList.add("onScroll");
     }
-
     rect = sixthChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
         sixthCircle.classList.add("onScroll");
     }
-
     rect = seventhChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
         seventhCircle.classList.add("onScroll");
     }
-
     rect = eighthChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
         eighthCircle.classList.add("onScroll");
     }
-
     rect = ninthChart.getBoundingClientRect();
     if (rect.bottom <= window.innerHeight) {
         ninthCircle.classList.add("onScroll");
     }
+    rect = tenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        tenCircle.classList.add("onScroll");
+    }
+    rect = elevenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        elevenCircle.classList.add("onScroll");
+    }
+    rect = twelveChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        twelveCircle.classList.add("onScroll");
+    }
+    rect = thirteenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        thirteenCircle.classList.add("onScroll");
+    }
+    rect = fourteenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        fourteenCircle.classList.add("onScroll");
+    }
+    rect = fifteenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        fifteenCircle.classList.add("onScroll");
+    }
+    rect = sixteenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        sixteenCircle.classList.add("onScroll");
+    }
+    rect = seventeenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        seventeenCircle.classList.add("onScroll");
+    }
+    rect = eighteenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        eighteenCircle.classList.add("onScroll");
+    }
+    rect = ninteenChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        ninteenCircle.classList.add("onScroll");
+    }
+    rect = twentyChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        twentyCircle.classList.add("onScroll");
+    }
+    rect = twentyoneChart.getBoundingClientRect();
+    if (rect.bottom <= window.innerHeight) {
+        twentyoneCircle.classList.add("onScroll");
+    }
+
 });
 
 // hightlights
