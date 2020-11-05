@@ -158,12 +158,13 @@ article {
 .title-item {
     width: 743px;
     margin-left: 148px;
+    text-shadow: 4px 4px 2px #fff;
 }
 
 .body-item {
     width: 653px;
     margin: auto;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,7 +173,7 @@ article {
 .body-link {
     width: 653px;
     margin: auto;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     justify-content: center;
     margin-top:-5%;
@@ -182,6 +183,18 @@ article {
 .body-caption {
     /* margin-left: 64px; */
     width: 743px;
+    text-shadow: 4px 4px 2px #fff;
+    
+}
+
+.body-caption h3 {
+    text-decoration-skip-ink: none;
+    text-decoration-line: underline;
+    z-index: -1;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-style: wavy;
+    text-decoration-color:#00b1dd77;
 }
 
 .box-item {
@@ -922,6 +935,7 @@ figcaption {
     background-image: linear-gradient(#b497c73a,#b497c717);
 }
 
+
 #quote-marks {
     transform: translate(650px, 5px);
 }
@@ -980,3 +994,4 @@ figcaption {
     from {background-position: 0% 0;}
     to {background-position: -100% 0;}
 }
+
