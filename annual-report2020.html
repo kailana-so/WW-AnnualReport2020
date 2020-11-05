@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Wellways 2020</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
@@ -14,24 +15,45 @@
 </head>
 
 <body>
-    <header>
-        <div onclick="menuAnimation(this)" id="menu-open">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div class="bar4"></div>
+    <nav  class="nav">    
+            <ul>
+            <li><a class="d-blue" href="#"><b>Welcome</b></a>
+                <ul>
+                <li><a href="#Chair">Chairperson and CEO report</a></li>
+                <li><a href="#BOD">Board of Directors</a></li>
+                </ul>
+            </li>
+            <li><a class="d-purple" href="#"><b>Our work</b></a>
+                <ul>
+                <li><a href="#section02">Building inclusive communities</a></li>
+                <li><a href="#Community">Community mental health</a></li>
+                <li><a href="#NDIS1">NDIS</a></li>
+                <li><a href="#Housing">Housing and homelessness</a></li>
+                <li><a href="#Residential">Residential mental health</a></li>
+                <li><a href="#Helpline">Wellways Helpline</a></li>
+                <li><a href="#Youth1">Working with young people</a></li>
+                <li><a href="#Prevention">Suicide prevention and support</a></li>
+                <li><a href="#Carers">Supporting carers</a></li>
+                </ul>
+            </li>
+            <li><a class="d-green" href="#"><b>Our Impact</b></a>
+                <ul>
+                <li><a href="#Advocacy">Advocacy</a></li>
+                <li><a href="#Education">Peer education and training</a></li>
+                <li><a href="#Reconciliation">Towards reconciliation</a></li>
+                </ul>
+            </li>
+            <li><a class="d-teal" href="#"><b>Living our values</b></a>
+                <ul>
+                <li><a href="#Offices">Our offices</a></li>
+                <li><a href="#Investing">Investing in people</a></li>
+                <li><a href="#Values">Living our values</a></li>
+                </ul>
+            </li>
+            <li class="last"><a href="#Contact"><b>Contact</b></a></li>
+            </ul>
         </div>
-    </header>
-    <!-- MENU ASIDE -->
-    <aside>
-        <!-- ADD MENU -->
-        <!-- ADD MENU -->
-        <!-- ADD MENU -->
-        <!-- ADD MENU -->
-        <!-- ADD MENU -->
-        <!-- ADD MENU -->
-        <!-- ADD MENU -->
-    </aside>
+    </nav>
     <!-- SECTION01 -->
     <section id="section01">
         <!-- inline svg bgs-->
@@ -121,7 +143,7 @@
         </article>
         <!-- LETTER -->
         <article>
-            <div>
+            <div id="Chair">
                 <div class="title-item scrollAnim">
                     <h3 class="anim-left d-blue b-shadow">Chairperson and CEO report</h3>
                 </div>
@@ -183,7 +205,7 @@
         <!-- SPACER 120 -->
         <div class="p-120"></div>
         <!-- BOARD OF -->
-        <div>
+        <div id="BOD">
             <div class="scrollAnim">
                 <div class="title-item">
                     <h3 class="anim-left d-blue b-shadow">Board of Directors</h3>
@@ -257,7 +279,7 @@
         <article class="column">
             <div class="scrollAnim">
                 <div class="main-title-right">
-                    <h2 class="white anim-top"> Building inclusive communities</h2>
+                    <h2 class="white anim-top">Building inclusive communities</h2>
                 </div>
             </div>
         </article>
@@ -310,7 +332,7 @@
         <!-- SPACER -->
         <div class="p-120"></div>
         <!-- COMMUNITY ARTICLE -->
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Community">
             <div class="content body-item">
                 <h3 class="anim-left d-purple">Community mental health</h3>
                 <h4 class="anim-top d-purple">Well Connected</h4>
@@ -335,7 +357,7 @@
                 </p>
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="NDIS1">
             <div class="content body-item">
                 <h3 class="anim-left d-purple">NDIS</h3>
                 <p class="anim-top ">147 Support Coordinators worked with frontline staff to support 3,150 participants and deliver 351,151 service contacts.
@@ -427,7 +449,7 @@
         <!-- SPACER -->
         <div class="p-120"></div>
         <!-- Housing and homelessness -->
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Housing">
             <div class="content body-item">
                 <h3 class="anim-left d-purple">Housing and homelessness </h3>
                 <h4 class="anim-top d-grey">Housing is an essential component to increased wellbeing</h4>
@@ -561,7 +583,7 @@
         <!-- SPACER -->
         <div class="p-96"></div>
         <!-- RESIDENTIAL -->
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Residential">
             <div class="content body-item">
                 <h3 class="anim-left d-purple">Residential mental health</h3>
                 <h4 class="anim-top d-purple">Step Up Step Down </h4>
@@ -617,7 +639,7 @@
                 </p>
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Helpline">
             <div class="content body-item">
                 <h3 class="anim-left d-purple">Wellways Helpline</h3>
                 <p class="anim-top ">40 trained volunteers took 7,500 calls and responded to 1,200 emails last financial year – the majority of these helped people understand their mental health issues or those they care for or supported people experiencing isolation and loneliness.
@@ -706,10 +728,13 @@
             
         <!-- SPACER 80 -->
         <div class="p-80"></div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Youth1">
             <div class="content body-item">
-                <h3 class="anim-left d-purple">Wellways Helpline</h3>
-                <p class="anim-top ">40 trained volunteers took 7,500 calls and responded to 1,200 emails last financial year – the majority of these helped people understand their mental health issues or those they care for or supported people experiencing isolation and loneliness.
+                <h3 class="anim-left d-purple">Working with young people</h3>
+                <p class="anim-top ">In Queensland, we supported 48 young people in both short term crisis placements and longer-term care arrangements.
+                    <br><br>A major restructure of our program has ensured that lived experience is embedded in key roles within the program which has resulted in quality outcomes for young people in Wellways’ care. 
+                    <br><br>Both of our Program Coordinators have a lived experience of being a child in care. 
+                    
                 </p>
             </div>
         </div>
@@ -725,7 +750,7 @@
                 <figcaption>Qld department of child safety, youth and women</figcaption>
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Prevention">
             <div class="content body-item">
                 <h3 class="anim-left d-purple">Suicide prevention and support </h3>
                 <h4 class="anim-left d-grey">As well as providing support to individuals who have attempted suicide and their families, we connect with and guide families, friends and workplaces who have lost someone to suicide.</h4>
@@ -747,7 +772,7 @@
                 <p class="anim-top ">In our Murrumbidgee region which covers towns from Wagga Wagga to Tumbarumba, to Holbrook, to Deniliquin, six staff provided 184 people with non-clinical support following a suicide attempt. 
                 </p>
             </div>
-            <div class="row">
+            <div class="row imagebg-b">
                 <!-- color imgs  -->
                 <div class="row scrollAnim">
                     <div class="w-sm-img" id="talking" alt="Three people talking"></div>
@@ -755,7 +780,7 @@
                 </div>
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Carers">
             <div class="content body-item">
                 <h3 class="anim-left d-purple">Supporting carers</h3>
                 <p class="anim-top">April 2020 was ground-breaking for Wellways.  
@@ -908,7 +933,7 @@
                     </div>
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Advocacy">
             <div class="content body-item">
                 <h2 class="anim-left d-green">Advocacy</h2>
                 <p class="anim-top ">The events of 2020 as well as major reviews of our mental health systems have underlined inequities in our communities but opened up opportunities to reset how we care and support one another. 
@@ -928,7 +953,7 @@
                 <image id="image04" width="2000" height="1333" href="imgs/JOH2001.jpg"></image>
             </defs>
         </svg>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Education">
             <div class="content body-item">
                 <h3 class="anim-left d-green">Peer education and training</h3>
                 <p class="anim-top ">Our peer education team travelled to Darwin to share their expertise and demonstrate the value of peer support networks and a peer workforce in the Northern Territory. 
@@ -938,7 +963,7 @@
                 </p>
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Reconciliation">
             <div class="content body-item">
                 <h3 class="anim-left d-green">Towards reconciliation</h3>
                 <p class="anim-top ">Our staff acknowledge First Nations peoples as the traditional owners and custodians of the land and that sovereignty has never ceded and resistance is ongoing. 
@@ -1169,7 +1194,7 @@
                 </div>
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim bg-c" id="Offices">
             <div class="content body-item">
                 <h3 class="anim-left d-teal">Our offices</h3>
             </div>
@@ -1177,7 +1202,7 @@
                 <iframe src="https://www.google.com/maps/d/embed?mid=1TeoYqR_jnDQszYltZZ4NIB-BkzQabOnu" width="640" height="380" frameborder="0"></iframe>    
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Investing">
             <div class="content body-item">
                 <h3 class="anim-left d-teal">Investing in people</h3>
                 <p class="anim-top">As Wellways continues to grow, so too do career opportunities for our staff. 
@@ -1257,7 +1282,7 @@
                 <figcaption class="figcenter">My Voice staff engagement survey, conducted by Best Practice Australia</figcaption>
             </div>
         </div>
-        <div class="scrollAnim">
+        <div class="scrollAnim" id="Values">
             <div class="content body-item">
                 <h3 class="anim-left d-teal">Living our values</h3>
                 <h4 class="anim-left d-grey">The staff engagement survey also found Wellways staff are more engaged than staff in other care-based organisations.</h3>
@@ -1496,7 +1521,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="Contact">
         <div class="footer-item">
             <svg width="318" height="65" viewBox="0 0 318 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0)">

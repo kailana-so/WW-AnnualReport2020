@@ -1,5 +1,5 @@
 // SCROLL FUCTION
-window.addEventListener("scroll", (text) => {
+window.addEventListener("scroll", () => {
     let page = this;
     let pageTop = this.scrollY;
     let pageHeight = this.outerHeight / 1.7;
@@ -24,6 +24,7 @@ window.addEventListener("scroll", (text) => {
         }
     });
 });
+
 
 // STATS COUNTER 0
 
@@ -286,4 +287,4 @@ function highlight(){
     console.log(pos);
     console.log(scroll);
   });
-}  
+};
