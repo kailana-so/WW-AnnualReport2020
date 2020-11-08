@@ -66,8 +66,8 @@ h5 {
 
 .nav {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: left;
     position: fixed;
     font-size: 14px;
     width: 100%;    
@@ -81,37 +81,38 @@ ul {
     list-style-type: none;
     background: #fff;
     position: relative;
-    border-bottom-left-radius: 15px; 
-    border-bottom-right-radius: 15px; 
+    box-shadow: 2px 2px 15px #C4C4C4
+    /* border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px;  */
 }
 
 ul li {
     display: inline-block;
-    border-bottom-left-radius: 15px; 
-    border-bottom-right-radius: 15px;
+    /* border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px; */
 }
 
 ul li a {
     color:#58585B;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     display: block;
 }
 
 ul li:hover {
     background: lightgrey;
-    border-bottom-left-radius: 0px; 
-    border-bottom-right-radius: 0px;
+    /* border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 0px; */
 }
 ul li:last-of-type:hover {
     background: lightgrey;
-    border-bottom-left-radius: 15px; 
-    border-bottom-right-radius: 15px;
+    /* border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px; */
 }
 .last:hover {
     background: lightgrey;
-    border-bottom-left-radius: 0px; 
-    border-bottom-right-radius: 15px;
+    /* border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 15px; */
 }
 ul ul {
     position: absolute;
@@ -1093,7 +1094,7 @@ h6.foot-tag {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 0 2% 0 0;
+
     margin:0 0 0;
     position: fixed;
     font-size: 12px;
