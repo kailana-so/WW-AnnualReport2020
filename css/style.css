@@ -54,7 +54,7 @@ p {
     transition: all 0.8s;
     color: #58585B;
     line-height: 150%;
-    margin: 12px 0;
+    margin: 3% 0;
 }
 h5 {
     font-family: 'Poppins', sans-serif;
@@ -366,11 +366,14 @@ a {
 .row-stats {
     display: flex;
     flex-direction: row;
-    padding: 5% 0 0 0;
+    padding: 2% 0 0 0;
     /* border: 1px solid red; */
     justify-content: space-between;
 }
-
+.row-stats h4 {
+    padding: 0;
+    margin: 0px
+}
 .w-sm-img {
     height: 272px;
     width: 402px;
@@ -1166,7 +1169,7 @@ p {
     transition: all 0.8s;
     color: #58585B;
     line-height: 150%;
-    margin: 12px 0;
+    margin: 2% 0;
 }
 h5 {
     font-family: 'Poppins', sans-serif;
@@ -1351,9 +1354,13 @@ figcaption {
 .row-stats {
     display: flex;
     flex-direction: row;
-    padding: 5% 0 0 0;
+    padding: 2% 0 0 0;
     /* border: 1px solid red; */
     justify-content: space-between;
+}
+.row-stats h4 {
+    padding: 0;
+    margin: 0px
 }
 
 .w-sm-img {
@@ -1385,43 +1392,8 @@ figcaption {
     transition: all 0.8s;
     color: #9064AA;
     line-height: 150%;
-    margin: 2.3% 0;
+    margin: 7% 0;    
     text-shadow: 2px 1px 2px #48bfe376;
-}
-
-.highlight{
-    display:inline-block;
-    width: max-content;
-    background-size: 80% auto; 
-    background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 50%,#48bfe376 50%);
-    background-position: 0% 0;
-    animation-duration: 2s;
-    animation-delay: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.highlight2{
-    display:inline-block;
-    width: max-content;
-    background-size: 80% auto; 
-    background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 50%,#48bfe376 50%);
-    background-position: 0% 0;
-    animation-duration: 2s;
-    animation-delay: 1.8s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-.highlight3{
-    display:inline-block;
-    width: max-content;
-    background-size: 80% auto;  
-    background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 50%,#48bfe376 50%);
-    background-position: 0% 0;
-    animation-duration: 2s;
-    animation-delay: 2.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 }
