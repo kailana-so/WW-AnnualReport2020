@@ -263,7 +263,7 @@ h3.b-shadow {
 }
 
 .logo {
-    width: 20%;
+    width: 30%;
 }
 
 .icon {
@@ -372,7 +372,7 @@ a {
 }
 .row-stats h4 {
     padding: 0;
-    margin: 0px
+    margin: 0;
 }
 .w-sm-img {
     height: 272px;
@@ -436,12 +436,12 @@ figcaption {
 .footer-item {
     width: 40%;
     margin: auto;
-    padding-left: 40%;
+    padding-left: 42%;
     padding: 5%;
 
 }
 footer {
-    background: #fff;
+    background: #58595b30;
 }
 
 footer p {
@@ -1360,7 +1360,7 @@ figcaption {
 }
 .row-stats h4 {
     padding: 0;
-    margin: 0px
+    margin: 0;
 }
 
 .w-sm-img {
