@@ -1,3 +1,6 @@
+* {
+    border: 1px solid red;
+}
 body {
     margin: 0;
 }
@@ -71,7 +74,7 @@ h5 {
     justify-content: left;
     position: fixed;
     font-size: 14px;
-    width: 100%;    
+    /* width: 100%;     */
     z-index: 999;
 }
 
@@ -185,7 +188,6 @@ article {
 .body-link {
     width: 60%;;
     margin: auto;
-    /* border: 1px solid purple; */
     display: flex;
     justify-content: center;
     margin-top:-5%;
@@ -193,7 +195,6 @@ article {
 }
 
 .body-caption {
-    /* margin-left: 64px; */
     width: 55%;
     
 }
@@ -354,7 +355,6 @@ a {
     display: flex;
     flex-direction: row;
     padding: 2% 0 0 0;
-    /* border: 1px solid red; */
     justify-content: space-between;
 }
 .row-stats h4 {
@@ -733,7 +733,7 @@ h6.foot-tag {
     box-shadow: 5px 7px 23px #a0a0a07b;
     width:110%;
     margin: 5% -10%;
-    /* border-radius: 5px;  */
+
 
 }
 
@@ -742,12 +742,12 @@ h6.foot-tag {
     box-shadow: 5px 7px 23px #a0a0a07b;
     width:110%;
     margin: 5% 10%;
-    /* border-radius: 5px;  */
+
 }
 
 .number-box {
     width:50%;
-    /* border:1px solid lawngreen; */
+
     
 }
 .number-text {
@@ -771,16 +771,16 @@ h6.foot-tag {
     background-image: url(../imgs/distress.png);
     background-size: cover;
     background-position-x: center;
-   margin: 5% -10%;
+    margin: auto;
 }
 
 .static-chart-2 {
     width: 650px;
-    height: 350px;
+    height: 370px;
     background-image: url(../imgs/growth.png);
     background-size: cover;
     background-position-x: center;
-    margin: 5% -10%;
+    margin: auto;
 }
 /* RESPONSIVE MAP */
 
@@ -800,22 +800,14 @@ h6.foot-tag {
 /* STATS COUNTER */
 
 #counter-section-container {
-    /* width: 100%; */
     text-align: center;
     animation: progress 2s ease-out forwards;
 }
 
 #counter-box-container {
-    /*border: 1px solid #999999;*/
     overflow: hidden;
     display: inline-block;
 }
-
-
-/* .counter {
-    margin: auto;
-} */
-
 
 /* CIRCULAR STATS */
 
@@ -823,7 +815,6 @@ h6.foot-tag {
     width: 250px;
     padding: 2% 5%;
     justify-content: space-evenly;
-    border: 1px solid green;   
     text-align: center; 
 }
 
@@ -833,7 +824,6 @@ h6.foot-tag {
     padding-top: 5%;
     max-width: 600px;
     max-height: 350px;
-    border: 1px solid blue;
 }
 
 .circle-bg {
@@ -900,11 +890,6 @@ h6.foot-tag {
 .scrollAnim:first-of-type {
     margin-top: 0;
 }
-/* 
-.scrollAnim .content {
-    border: 1px solid pink;
-} */
-
 
 .scrollAnim.anim {
     opacity: 1;
@@ -1088,26 +1073,14 @@ h6.foot-tag {
 
 @media(max-width: 768px) {
 
-/* .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-    margin:0 0 0;
-    position: fixed;
-    font-size: 12px;
-    width: 100%;    
-} */
 .nav {
     display: flex;
     flex-direction: column;
     justify-content: left;
     position: fixed;
     font-size: 14px;
-    width: 100%;    
     z-index: 999;
 }
-
 
 /* TYPE */
 h1 {
@@ -1149,7 +1122,7 @@ h3 {
 h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 20px;
     transition: all 0.8s;
     padding: 12% 0 0 0;
 }
@@ -1180,9 +1153,7 @@ h5 {
 .mobile-row {
     flex-direction: row;  
     display: flex;
-    /* justify-content: flex-end; */
     align-content: space-around;
-    border: 1px solid red;
 }
 .left {
     display: inline-block;
@@ -1198,34 +1169,21 @@ h5 {
     flex-direction: row;
     margin: auto;
     margin: 4%;
-    border: 1px solid yellow;
 }
 .body-item {
     width: 60%;
     margin: auto;
-    /* padding-left: 40%; */
-    /* padding: 5%; */
-/*     
-    width: 653px;
-    margin: auto; */
-    /* border: 1px solid purple; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .body-box {
-    /* width: 820px;
-    height: 427px; */
-    /* padding: 2% 3%; */
-    /* margin: 4%; */
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 5px 7px 23px #a0a0a07b;
 }
 
 .body-box-lg {
-    /* width: 820px;
-    height: 427px; */
     padding: 2% 4%;
     margin: 10%;
     border-radius: 15px;
@@ -1261,7 +1219,7 @@ figcaption {
     background-image: url(../imgs/distress.png);
     background-size: cover;
     background-position-x: center;
-   margin: 5% -10%;
+   margin: auto;
 }
 
 .static-chart-2 {
@@ -1270,7 +1228,7 @@ figcaption {
     background-image: url(../imgs/growth.png);
     background-size: contain;
     background-position-x: center;
-   margin: 5% -10%;
+    margin: auto;
 }
 
 .sq-image {
@@ -1337,7 +1295,6 @@ figcaption {
     display: flex;
     flex-direction: row;
     padding: 2% 0 0 0;
-    /* border: 1px solid red; */
     justify-content: space-between;
 }
 .row-stats h4 {
@@ -1351,7 +1308,12 @@ figcaption {
     margin: 5% 3%;
 }
 
-
+.single-chart {
+    width: 150px;
+    padding: 2% 5%;
+    justify-content: space-evenly;
+    text-align: center;
+}
 /* QUOTE */
 
 .quote {
