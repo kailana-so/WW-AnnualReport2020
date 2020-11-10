@@ -1,10 +1,10 @@
 // SCROLL FUCTION
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
     let page = this;
     let pageTop = this.scrollY;
-    let pageHeight = this.outerHeight / 1.7;
+    let pageHeight = this.outerHeight / 1;
 
-    let frames = document.querySelectorAll(".scrollAnim");
+    let frames = document.querySelectorAll('.scrollAnim');
     frames.forEach((frame) => {
         let frameTop = frame.offsetTop;
         let frameHeight = frame.offsetHeight;
@@ -13,12 +13,12 @@ window.addEventListener("scroll", () => {
             pageTop >= frameTop - pageHeight &&
             pageTop < frameTop + frameHeight / 0.8
         ) {
-            frame.classList.add("anim");
+            frame.classList.add('anim');
             // document.getElementById('box1').classList.add('fade-in');
             // document.getElementById('box2').classList.add('open-right');
             console.log("yup");
         } else {
-            frame.classList.remove("anim");
+            frame.classList.remove('anim');
             // document.getElementById('box1').classList.remove('fade-in');
             // document.getElementById('box2').classList.remove('open-right');
         }
@@ -29,14 +29,14 @@ window.addEventListener("scroll", () => {
 // STATS COUNTER 0
 
 $(window).scroll(function() {
-    var a = 0;
-    var b = 0;
-    var c = 0;
+    var a = 1;
+    var b = 1;
+    var c = 1;
 
-    var oTop = $('#counter-box1, #counter-box2, #counter-box3').offset().top - window.innerHeight;
-    var mTop = $('#counter-box4, #counter-box5, #counter-box6, #counter-box7').offset().top - window.innerHeight;
+    var oTop = $('#counter-box1').offset().top - window.innerHeight;
+    var mTop = $('#counter-box4').offset().top - window.innerHeight;
     var nTop = $('#counter-box9').offset().top - window.innerHeight;
-    if (a == 0 && $(window).scrollTop() > oTop) {
+    if (a == 1 && $(window).scrollTop() > oTop) {
         $('.counter').each(function() {
             var $this = $(this),
                 countTo = $this.attr('data-number');
@@ -63,7 +63,7 @@ $(window).scroll(function() {
         });
         a = 1;
     }
-    if (b == 0 && $(window).scrollTop() > mTop) {
+    if (b == 1 && $(window).scrollTop() > mTop) {
         $('.counter1').each(function() {
             var $this = $(this),
                 countTo = $this.attr('data-number');
@@ -90,7 +90,7 @@ $(window).scroll(function() {
         });
         b = 1; 
     }
-    if (c == 0 && $(window).scrollTop() > nTop) {
+    if (c == 1 && $(window).scrollTop() > nTop) {
         $('.counter2').each(function() {
             var $this = $(this),
                 countTo = $this.attr('data-number');
