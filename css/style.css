@@ -1,6 +1,7 @@
 * {
     border: 1px solid red;
 }
+
 body {
     margin: 0;
 }
@@ -179,7 +180,7 @@ article {
 }
 
 .body-item {
-    width: 43%;
+    width: 48%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -208,7 +209,7 @@ div.caption-1 {
 }
 
 .box-item {
-    width: 25%;
+    width: 35%;
     margin: auto;
     justify-content: center;
     padding: 2% 2% 4% 2%;
@@ -446,7 +447,8 @@ h6.foot-tag {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
-    padding-top:15px;
+    padding: 1%;
+    margin: 0;
 }
 /* BACKGROUNDS */
 
@@ -1070,11 +1072,17 @@ h6.foot-tag {
     from {background-position: 0% 0;}
     to {background-position: -100% 0;}
 }
+/* SMLL DESKTOP *//* SMLL DESKTOP *//* SMLL DESKTOP */
+/* SMLL DESKTOP *//* SMLL DESKTOP *//* SMLL DESKTOP */
 
+@media(max-width: 1024px) {
+
+    
+}
 /* TABLET */ /* TABLET */ /* TABLET */ /* TABLET */ 
 /* TABLET */ /* TABLET */ /* TABLET */ /* TABLET */ 
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
 
 body {
     margin: 0 !important;
@@ -1127,13 +1135,14 @@ h3 {
     font-weight: 700;
     font-size: 33px;
     transition: all 0.8s;
+    margin: 0;
 }
 h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
     transition: all 0.8s;
-    padding: 12% 0 0 0;
+    padding: 0;
 }
 p {
     font-family: 'Open Sans', sans-serif;
@@ -1153,6 +1162,11 @@ h5 {
     /* text-align: center; */
 }
 
+.main-title-right {
+    margin: 10% 35% 15% 15%;
+    text-align: right;
+    justify-content: left;
+}
 .wide-box {
     background-color: #fff;
     box-shadow: 5px 7px 23px #a0a0a07b;
@@ -1274,8 +1288,8 @@ figcaption {
 }
 
 .f-image {
-    width: 294px;
-    height: 160px;
+    width: 594px;
+    height: 360px;
     margin: 5% auto;
     border-radius: 4px;
 }
@@ -1294,11 +1308,11 @@ figcaption {
     padding: 1%;
     margin: 0 15%;
 }
+
 .imagebg-w {
     background-image: url(../imgs/blue.png);
     background-repeat: space;
     background-position-y: center;
-
 }
 
 .bg-c {
@@ -1343,6 +1357,21 @@ figcaption {
     justify-content: space-evenly;
     text-align: center;
 }
+
+
+.button {
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #009ACD;
+    border: none;
+    border-radius: 25px;
+  }
+  
 /* QUOTE */
 
 .quote {
@@ -1368,16 +1397,5 @@ figcaption {
     margin: 7% 0;    
     text-shadow: 2px 1px 2px #48bfe376;
 }
-
-
-h6.foot-tag {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    padding:2% 0%;
-    margin: 0;
-}
-
-
 
 }

@@ -16,7 +16,7 @@ window.addEventListener('scroll', () => {
             frame.classList.add('anim');
             // document.getElementById('box1').classList.add('fade-in');
             // document.getElementById('box2').classList.add('open-right');
-            console.log("yup");
+            // console.log("yup");
         } else {
             frame.classList.remove('anim');
             // document.getElementById('box1').classList.remove('fade-in');
@@ -284,7 +284,7 @@ function highlight(){
       $(this).removeClass("active");
       $(this).addClass("disactivated");
     }
-    console.log(pos);
-    console.log(scroll);
+    // console.log(pos);
+    // console.log(scroll);
   });
 };
