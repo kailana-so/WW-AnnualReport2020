@@ -1605,6 +1605,14 @@ h4 {
     flex-direction: row;  
     padding: 0%;
 }
+
+.box-item {
+    width: 40%;
+    flex-direction: row;
+    margin: auto;
+    padding: 0%;
+    /* margin: 4%;*/
+}
 #b05 {
     position: absolute;
     width: 100%;
