@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid red;
-} */
+}
 
 body {
     margin: 0;
@@ -518,7 +518,7 @@ h6.foot-tag {
     position: absolute;
     width: 100%;
     z-index: -8;    
-    height: 6400px;
+    height: 4400px;
     background: linear-gradient(#fff,#00a6b87b, #00a6b84f, #00a6b814, #fff);
 }
 
@@ -543,8 +543,8 @@ h6.foot-tag {
     position: absolute;
     width: 100%;
     z-index: -8;    
-    height: 3400px;
-    background: linear-gradient(#00a6b80b,#00a6b87b, #00a6b84f, #00a6b814, #fff);
+    height: 2400px;
+    background: linear-gradient(#fff,#00a6b87b, #00a6b84f, #00a6b814, #fff);
 }
 
 #section05 {
@@ -1224,7 +1224,7 @@ h5 {
     
     .box-item {
         width: 35%;
-        margin: auto;
+        margin: 0;
         justify-content: center;
        
     }
@@ -1240,7 +1240,7 @@ h5 {
     padding: 5.6% 0 0 0;
 }
 
-    }
+}
 /* TABLET */  
 @media(max-width: 1024px) {
 
@@ -1360,7 +1360,7 @@ h5 {
     flex-direction: column;  
     display: flex;
     align-content: center;
-    justify-items: center;
+    /* justify-items: center; */
 }
 
 .left {
@@ -1582,7 +1582,7 @@ figcaption {
     width: 100%;
     z-index: -8;    
     height: 1400px;
-    background: linear-gradient(#00a6b80b,#00a6b87b, #00a6b84f, #00a6b814, #fff);
+    background: linear-gradient(#fff,#00a6b87b, #00a6b84f, #00a6b814, #fff);
 }
 h4 {
     display: block;
@@ -1595,24 +1595,22 @@ h4 {
 }
 
 /* IPAD */
-@media (max-width:601px)  {
+@media (max-width:602px)  {
 .hero {
-    padding: 15% 0 15% 0;
+    padding: 15% 0 5% 10%;
 }
 /* first boxes */
 .mobile-row {
-    flex-direction: row;  
     display: flex;
-    align-content: center;
-    justify-items: center;
-    padding: 3%;
+    flex-direction: row;  
+    padding: 0%;
 }
 #b05 {
     position: absolute;
     width: 100%;
     z-index: -8;    
     height: 1400px;
-    background: linear-gradient(#00a6b80b,#00a6b87b, #00a6b84f, #00a6b814, #fff);
+    background: linear-gradient(#fff,#00a6b87b, #00a6b84f, #00a6b814, #fff);
 }
 h4 {
     display: block;
@@ -1630,7 +1628,81 @@ a {
     z-index: 999;
     font-size: 12px;
 }
-  
+#section02 > div:nth-child(33) > div.row.imagebg-b > div,
+#Housing > div.row.scrollAnim.imagebg-b.anim > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title-right {
+    margin: 1% 15% 15% 15%;
+    text-align: right;
+    justify-content: left;
+}
+
+.number-text {
+    width: 40%;
+    padding: 1% 15%;
+}
+.static-chart-1 {
+    width: 350px;
+    height: 200px;
+    background-image: url(../imgs/distress.png);
+    background-size: cover;
+    background-position-x: center;
+}
+
+.static-chart-2 {
+    width: 350px;
+    height: 250px;
+}
+
+.sq-image {
+    height: 84px;
+    width: 84px;
+}
+
+.w-image {
+    width: 405px;
+    height: 213.5px;
+    margin: 24px auto;
+    border-radius: 5px;
+}
+
+.f-image {
+    height: 260px;
+    /* margin: 5%; */
+    border-radius: 4px;
+}
+
+.imagebg-p {
+    background-image: url(../imgs/purple.png);
+    background-repeat: contain;
+    padding: 10%;
+    margin: 0;
+}
+
+.imagebg-b {
+    background-image: url(../imgs/blue.png);
+    background-repeat: contain;
+    background-position-x: center;
+    padding: 3%;
+    margin: 0 15%;
+}
+
+.imagebg-w {
+    background-image: url(../imgs/blue.png);
+    background-repeat: contain;
+    background-position-y: center;
+}
+
+.bg-c {
+    background-image: url(../imgs/text.png);
+    background-repeat: contain;
+    background-position-y: center;
+    padding: 5%;
+    margin: 10%;
+}
 }
 
 @media (min-width:320px)  { 
