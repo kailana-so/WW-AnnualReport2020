@@ -211,7 +211,7 @@ div.caption-1 {
     width: 25%;
     margin: auto;
     justify-content: center;
-    padding: 5%;
+    padding: 2% 2% 4% 2%;
 }
 
 h3.b-shadow {
@@ -681,12 +681,13 @@ h6.foot-tag {
 /* STAT BOXES */
 
 .box { 
-    width: 486px;
-    /* height: 328px; */
+    width: 60%;
     background-color: #fff;
     box-shadow: 5px 7px 23px #a0a0a07b;
-    /* border-radius: 5px; */
     padding: 5%;
+}
+.box h4 { 
+    margin: 0;
 }
 
 .overlay {
@@ -740,19 +741,18 @@ h6.foot-tag {
 .wide-box {
     background-color: #fff;
     box-shadow: 5px 7px 23px #a0a0a07b;
-    width:110%;
+    width:120%;
     margin: 5% 10%;
 
 }
 
 .number-box {
-    width:50%;
-
-    
+    width:60%;    
 }
+
 .number-text {
-    width:60%;
-    padding: 5%;
+    width:40%;
+    padding: 1% 5%;
 }
 
 .box-left {
@@ -771,7 +771,7 @@ h6.foot-tag {
     background-image: url(../imgs/distress.png);
     background-size: cover;
     background-position-x: center;
-    margin: auto;
+    margin: 0 50% 0 -5%;
 }
 
 .static-chart-2 {
@@ -780,14 +780,16 @@ h6.foot-tag {
     background-image: url(../imgs/growth.png);
     background-size: cover;
     background-position-x: center;
-    margin: auto;
+    margin: 0 50% 0 -5%;
 }
 /* RESPONSIVE MAP */
 
 .googleMap{
     position: relative;
-    height: 0;
-    padding-bottom: 50%;
+    padding-bottom: 40%;
+    width: 70%;
+    margin: auto;
+
   }
   
   .googleMap iframe{
@@ -796,6 +798,7 @@ h6.foot-tag {
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 15px;
   }
 /* STATS COUNTER */
 
@@ -990,14 +993,14 @@ h6.foot-tag {
     margin: 5% auto;
     padding: 5%;
     border-radius: 15px;
-    background-image: linear-gradient(#b497c73a,#b497c717);
+    background-image: linear-gradient(#b497c73a,#fff);
 }
 
 
 #quote-marks {
     /* transform: translate(650px, 5px); */
     float: right;
-    padding: 1%;
+    padding: 2%;
 }
 .quote-p {
     font-family: 'Open Sans', sans-serif;
@@ -1007,14 +1010,14 @@ h6.foot-tag {
     color: #9064AA;
     line-height: 150%;
     margin: 7% 0;
-    text-shadow: 2px 1px 2px #48bfe376;
+    /* text-shadow: 2px 1px 2px #48bfe376; */
 }
 
 .highlight{
     display:inline-block;
     width: max-content;
     background-size: 200% auto; 
-    background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 50%,#48bfe376 50%);
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0) 50%,#48bfe341 50%);
     background-position: 0% 0;
     animation-duration: 2s;
     animation-delay: 0.8s;
@@ -1073,6 +1076,9 @@ h6.foot-tag {
 
 @media(max-width: 768px) {
 
+body {
+    margin: 0 !important;
+}
 .nav {
     display: flex;
     flex-direction: column;
@@ -1082,6 +1088,9 @@ h6.foot-tag {
     z-index: 999;
 }
 
+.p-120 {
+    padding: 10% 0 0 0;
+}
 /* TYPE */
 h1 {
     font-family: 'Poppins', sans-serif;
@@ -1144,6 +1153,23 @@ h5 {
     /* text-align: center; */
 }
 
+.wide-box {
+    background-color: #fff;
+    box-shadow: 5px 7px 23px #a0a0a07b;
+    width:100%;
+    margin: 5% 10%;
+
+}
+
+.number-box {
+    width:30%;    
+}
+
+.number-text {
+    width:40%;
+    padding: 1% 5%;
+}
+
 /* IMAGES */
 .icon {
     height: 24px;
@@ -1178,14 +1204,16 @@ h5 {
     justify-content: center;
 }
 .body-box {
+    padding: 0%;
+    margin: 0%;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 5px 7px 23px #a0a0a07b;
 }
 
 .body-box-lg {
-    padding: 2% 4%;
-    margin: 10%;
+    padding: 0%;
+    margin: 0%;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 5px 7px 23px #a0a0a07b;
@@ -1200,12 +1228,15 @@ figcaption {
 
 /* BOX ITEMS */
 .box { 
-    width: 286px;
-    /* height: 328px; */
+    width: 50%;
     background-color: #fff;
     box-shadow: 5px 7px 23px #a0a0a07b;
-    border-radius: 5px;
     padding: 5%;
+}
+.box h4,
+.box p { 
+    margin: 0;
+    font-size: smaller;
 }
 
 /* SVG */
@@ -1219,16 +1250,14 @@ figcaption {
     background-image: url(../imgs/distress.png);
     background-size: cover;
     background-position-x: center;
-   margin: auto;
 }
 
 .static-chart-2 {
     width: 450px;
     height: 250px;
-    background-image: url(../imgs/growth.png);
+    /* background-image: url(../imgs/growth.png);
     background-size: contain;
-    background-position-x: center;
-    margin: auto;
+    background-position-y: center; */
 }
 
 .sq-image {
@@ -1245,9 +1274,9 @@ figcaption {
 }
 
 .f-image {
-    width: 494px;
-    height: 260px;
-    margin: 24px auto;
+    width: 294px;
+    height: 160px;
+    margin: 5% auto;
     border-radius: 4px;
 }
 
@@ -1287,7 +1316,7 @@ figcaption {
 .img-row-right {
     display: flex;
     flex-direction: row;
-    padding-left: 169px;
+    padding-left: 0;
     padding-right: 0;
     width: 200px;
 }
@@ -1339,5 +1368,16 @@ figcaption {
     margin: 7% 0;    
     text-shadow: 2px 1px 2px #48bfe376;
 }
+
+
+h6.foot-tag {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding:2% 0%;
+    margin: 0;
+}
+
+
 
 }
