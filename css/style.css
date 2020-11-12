@@ -1720,7 +1720,6 @@ a {
 }
 }
 
-
 @media (max-width:480px)  { 
 
 .hero-item {
@@ -1863,6 +1862,19 @@ figcaption {
     line-height: 130%;
 }
  
+.main-title-right {
+    margin: 1% 15% 15% 5%;
+    text-align: right;
+    justify-content: left;
+}
+
+.overlay-chart {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: -15% 0 5% 0;
+}
+
 .blue {
     color: #009ACD !important;
 }
@@ -1879,12 +1891,16 @@ figcaption {
 }
 
 .w-image {
-    width: 220px;
-    height: 160px;
-    margin: 48px auto;
+    width: 260px;
+    height: 120px;
+    margin: 4% auto;
     border-radius: 10px;
 }
-
+#board {
+    background-image: url(../imgs/board.png);
+    background-size: contain;
+    background-position-y: center;
+}
 .f-image {
     height: 220px;
     margin: 48px auto;
@@ -1972,5 +1988,9 @@ footer h5 {
     padding: 0;
     margin: 2% 0;
 }
+
+}
+
+@media (max-width:480px)  { 
 
 }
