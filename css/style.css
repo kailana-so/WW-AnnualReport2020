@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid red;
-} */
+}
 
 body {
     margin: 0;
@@ -358,7 +358,7 @@ figure {
 figcaption {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 14px;
     color: #58585B;
     line-height: 130%;
 }
@@ -685,7 +685,7 @@ h6.foot-tag {
 .overlay {
     display: flex;
     justify-content: center;
-    margin: 2.5% 0;
+    margin: 5% 0;
 }
 .overlay-chart {
     display: flex;
@@ -1817,7 +1817,7 @@ a {
 }
 
 .hero-item {
-    padding: 25% 0 0 18%;
+    padding: 25% 0;
 }
 .hero {
     padding: 5%;
@@ -1828,6 +1828,13 @@ a {
     text-align: left;
     justify-content: center;
 }
+.main-title-right {
+    margin: 0 15% 15% 0;
+    width: 90%;
+    text-align: right;
+    justify-content: left;
+}
+
 .number-text {
     width: 55%;
     padding: 1% 2% 1% 17%;
@@ -1837,7 +1844,7 @@ a {
 .mobile-row {
     display: flex;
     flex-direction: column;
-    margin: 28% 0%;
+    margin: 5% 0%;
 }
 
 .body-item {
@@ -1846,6 +1853,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5% 0;
 }
 .p-120{
     padding: 9% 0 0 0;
