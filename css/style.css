@@ -159,17 +159,18 @@ article {
 }
 
 .box-item {
-    width: 20%;
+    width: 25%;
     margin: auto;
     justify-content: center;
-    padding: 4% 2% 4% 2%;
+    padding: 0% 2% 4% 2%;
 }
 
 .main-title{
-    margin: 10%;
+    margin: 20% 15%;
     text-align: left;
     justify-content: center;
 }
+
 
 .main-title-right {
     margin: 15% 35% 15% 10%;
@@ -343,6 +344,10 @@ a {
     padding: 0;
     margin: 0;
 }
+#section02 > div:nth-child(40) > div.row.imagebg-b > div {
+    display: flex;
+    flex-direction: column;
+}
 
 figure {
     padding: 0;
@@ -353,6 +358,7 @@ figure {
 figcaption {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: 10px;
     color: #58585B;
     line-height: 130%;
 }
@@ -362,13 +368,13 @@ figcaption {
 }
 
 .p-24 {
-    padding: 2.4% 0 0 0;
+    padding: 4% 0 0 0;
 }
 .p-96 {
-    padding: 9.6% 0 0 0;
+    padding: 11% 0 0 0;
 }
 .p-120 {
-    padding: 12% 0 0 0;
+    padding: 15% 0 0 0;
 }
 .pl-167 {
     text-align: right;
@@ -1339,6 +1345,9 @@ body {
     z-index: 999;
 }
 
+#section01 > article.scrollAnim.anim > div {
+    padding: 15% 0;
+}
 .p-120 {
     padding: 13% 0 0 0;
 }
@@ -1927,6 +1936,13 @@ a {
     text-align: center;
 }
 
+.row-stats {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0 0 0;
+    justify-content: space-between;
+}
+
 .box {
     width: 40%;
     background-color: #fff;
@@ -2056,7 +2072,7 @@ figcaption {
 .static-chart-2,
 .static-chart-1{
     width: 250px;
-    height: 170px;
+    height: 140px;
     background-image: url(../imgs/growth.png);
     background-size: cover;
     background-position-x: center;
