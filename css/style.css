@@ -1342,7 +1342,7 @@ body {
     justify-content: left;
     position: fixed;
     font-size: 14px;
-    z-index: 999;
+    z-index: 9999;
 }
 
 #section01 > article.scrollAnim.anim > div {
