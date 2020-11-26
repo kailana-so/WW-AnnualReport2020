@@ -19,6 +19,7 @@ window.addEventListener('scroll', () => {
             // console.log("yup");
         } else {
             frame.classList.remove('anim');
+            
             // document.getElementById('box1').classList.remove('fade-in');
             // document.getElementById('box2').classList.remove('open-right');
         }
@@ -282,7 +283,6 @@ function highlight(){
     else
     {
       $(this).removeClass("active");
-      $(this).addClass("disactivated");
     }
     // console.log(pos);
     // console.log(scroll);

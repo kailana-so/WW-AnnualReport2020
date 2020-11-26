@@ -818,7 +818,7 @@ h6.foot-tag {
     margin: 5% auto;
     padding-top: 5%;
     max-width: 600px;
-    height: 50px;
+    max-height: 150px;
 }
 
 .circle-bg {
@@ -1367,6 +1367,19 @@ body {
     position: fixed;
     font-size: 14px;
     z-index: 9999;
+}
+
+ul li:active {
+    background: lightgrey;
+}
+ul li:last-of-type:active {
+    background: lightgrey;
+}
+.last:active {
+    background: lightgrey;
+}
+ul li:active ul {
+    display: block;
 }
 
 #section01 > article.scrollAnim.anim > div {
@@ -1978,7 +1991,7 @@ a {
     margin: 5% auto;
     padding-top: 5%;
     max-width: 300px;
-    max-height: 200px;
+    max-height: 80px;
 }
 
 .row-stats {
