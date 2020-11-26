@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
         let frameHeight = frame.offsetHeight;
 
         if (
-            pageTop >= frameTop - pageHeight &&
+            pageTop >= frameTop + pageHeight &&
             pageTop < frameTop + frameHeight / 0.8
         ) {
             frame.classList.add('anim');
