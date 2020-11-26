@@ -34,7 +34,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 80px;
-    transition: 0.9s;
+    transition: 0.8s;
     display: inline;
 }
 h3 {
@@ -352,10 +352,6 @@ a {
 .row-stats h4 {
     padding: 0;
     margin: 0;
-}
-#section02 > div:nth-child(40) > div.row.imagebg-b > div {
-    display: flex;
-    flex-direction: column;
 }
 
 figure {
@@ -881,8 +877,8 @@ h6.foot-tag {
 .scrollAnim {
     height: 100%;
     opacity: 0;
-    transition: 1.1s;
-    transition-delay: 0.3s all;
+    transition: 0.9s;
+    transition-delay: 0.4s all;
     /* margin: 24px auto; */
 }
 
@@ -933,13 +929,13 @@ h6.foot-tag {
 .anim .anim-bottom img {
     transform: translate(0, 0);
 }
-
+/* 
 .scroller {
     position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 
 @keyframes fadeIn {
     0% {
@@ -1090,7 +1086,7 @@ h1 {
     font-weight: 700;
     font-size: 118px;
     margin: 5% 0;
-    transition: 1s;
+    transition: 0.6s;
     display: block;
     padding: 0;
     line-height: 120%;
@@ -1104,7 +1100,7 @@ h1 {
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
-    transition: 0.9s;
+    transition: 0.4s;
     margin: 5% 0;
     line-height: 240px;
 }
@@ -1112,28 +1108,28 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 78px;
-    transition: 0.9s;
+    transition: 0.4s;
     display: inline;
 }
 h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 44px;
-    transition: all 0.8s;
+    transition: all 0.4s;
     display: inline;
 }
 h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    transition: all 0.8s;
+    transition: all 0.4s;
     margin-top: 5% 0;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    transition: all 0.8s;
+    transition: all 0.4s;
     color: #58585B;
     line-height: 150%;
     margin: 3% 0;
@@ -1142,7 +1138,7 @@ h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    transition: 0.9s;
+    transition: 0.4s;
     color: #58585B;
 
 }
@@ -1163,7 +1159,7 @@ h1 {
     font-weight: 700;
     font-size: 100px;
     margin: 5% 0;
-    transition: 1s;
+    transition: 0.6s;
     display: block;
     padding: 0;
     line-height: 120%;
@@ -1177,7 +1173,7 @@ h1 {
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
-    transition: 0.9s;
+    transition: 0.6s;
     margin: 5% 0;
     line-height: 240px;
 }
@@ -1185,7 +1181,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 60px;
-    transition: 0.9s;
+    transition: 0.5s;
     display: inline;
 }
 h3 {
@@ -1199,14 +1195,14 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    transition: all 0.8s;
+    transition: all 0.5s;
     margin-top: 5% 0;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    transition: all 0.8s;
+    transition: all 0.5s;
     color: #58585B;
     line-height: 150%;
     margin: 3% 0;
@@ -1215,7 +1211,7 @@ h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    transition: 0.9s;
+    transition: 0.5s;
     color: #58585B;
 
 }
@@ -1266,7 +1262,7 @@ h5 {
         font-weight: 700;
         font-size: 100px;
         margin: 5% 0;
-        transition: 1s;
+        transition: 0.7s;
         display: block;
         padding: 0;
         line-height: 120%;
@@ -1280,7 +1276,7 @@ h5 {
         /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 3px;
         -webkit-text-stroke-color: #fff;
-        transition: 0.9s;
+        transition: 0.5s;
         margin: 5% 0;
         line-height: 240px;
     }
@@ -1288,28 +1284,28 @@ h5 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         font-size: 60px;
-        transition: 0.9s;
+        transition: 0.5s;
         display: inline;
     }
     h3 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         font-size: 56px;
-        transition: all 0.8s;
+        transition: all 0.5s;
         display: inline;
     }
     h4 {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 18px;
-        transition: all 0.8s;
+        transition: all 0.5s;
         margin-top: 5% 0;
     }
     p {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 16px;
-        transition: all 0.8s;
+        transition: all 0.5s;
         color: #58585B;
         line-height: 150%;
         margin: 3% 0;
@@ -1318,7 +1314,7 @@ h5 {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 13px;
-        transition: 0.9s;
+        transition: 0.5s;
         color: #58585B;
     
     }
@@ -1393,7 +1389,6 @@ h1 {
     font-weight: 700;
     font-size: 60px;
     margin: 12px 0;
-    transition: 1s;
     display: block;
     padding: 0;
     line-height: 120%;
@@ -1407,7 +1402,6 @@ h1 {
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
-    transition: 0.9s;
     margin: 12px -5px;
     line-height: 120px;
 }
@@ -1415,14 +1409,12 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    transition: 0.9s;
     display: block;
 }
 h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 33px;
-    transition: all 0.8s;
     margin: 0;
 }
 h4 {
@@ -1430,14 +1422,13 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    transition: all 0.8s;
+
     padding: 0;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 15px;
-    transition: all 0.8s;
     color: #58585B;
     line-height: 150%;
     margin: 2% 0;
@@ -1446,7 +1437,6 @@ h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    transition: 0.9s;
     color: #58585B;
     /* text-align: center; */
 }
@@ -1677,7 +1667,7 @@ figcaption {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    transition: all 0.8s;
+    transition: all 0.4s;
     color: #9064AA;
     line-height: 150%;
     margin: 7% 0;   
@@ -1912,14 +1902,17 @@ a {
 #section05 > div:nth-child(2) > div.body-link.p-24 > div > a > div {
     padding-bottom: 5%;
 }
-
+/* 
+#section02 > div:nth-child(40) > div.row.imagebg-b > div {
+    display: flex;
+    flex-direction: column;
+} */
 /* TYPE */
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 37px;
     margin: 12px 0;
-    transition: 1s;
     display: block;
     padding: 0;
     line-height: 120%;
@@ -1933,7 +1926,6 @@ h1 {
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
-    transition: 0.9s;
     margin: 12px -5px;
     line-height: 120px;
 }
@@ -1941,28 +1933,24 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 27px;
-    transition: 0.9s;
     display: block;
 }
 h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 20px;
-    transition: all 0.8s;
     margin: 0;
 }
 h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    transition: all 0.8s;
     padding: 0;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    transition: all 0.8s;
     color: #58585B;
     line-height: 150%;
     margin: 2% 0;
@@ -1971,7 +1959,6 @@ h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 11px;
-    transition: 0.9s;
     color: #58585B;
     /* text-align: center; */
 }
@@ -2165,5 +2152,6 @@ footer h5 {
 .anim-right img {
     transform: translate(50px, 0);
 }
+
 
 }

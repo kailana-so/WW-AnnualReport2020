@@ -2,7 +2,7 @@
 window.addEventListener('scroll', () => {
     let page = this;
     let pageTop = this.scrollY;
-    let pageHeight = this.outerHeight / 1;
+    let pageHeight = this.outerHeight + 1;
 
     let frames = document.querySelectorAll('.scrollAnim');
     frames.forEach((frame) => {
@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
 
         if (
             pageTop >= frameTop - pageHeight &&
-            pageTop < frameTop + frameHeight / 0.8
+            pageTop < frameTop + frameHeight + 0.8
         ) {
             frame.classList.add('anim');
             // document.getElementById('box1').classList.add('fade-in');
@@ -33,9 +33,9 @@ $(window).scroll(function() {
     var b = 1;
     var c = 1;
 
-    var oTop = $('#counter-box1').offset().top - window.innerHeight;
-    var mTop = $('#counter-box4').offset().top - window.innerHeight;
-    var nTop = $('#counter-box9').offset().top - window.innerHeight;
+    var oTop = $('#counter-box1').offset().top + window.innerHeight;
+    var mTop = $('#counter-box4').offset().top + window.innerHeight;
+    var nTop = $('#counter-box9').offset().top + window.innerHeight;
     if (a == 1 && $(window).scrollTop() > oTop) {
         $('.counter').each(function() {
             var $this = $(this),
@@ -61,7 +61,7 @@ $(window).scroll(function() {
 
                 });
         });
-        a = 1;
+        a = 0;
     }
     if (b == 1 && $(window).scrollTop() > mTop) {
         $('.counter1').each(function() {
@@ -88,7 +88,7 @@ $(window).scroll(function() {
 
                 });
         });
-        b = 1; 
+        b = 0; 
     }
     if (c == 1 && $(window).scrollTop() > nTop) {
         $('.counter2').each(function() {
@@ -115,7 +115,7 @@ $(window).scroll(function() {
 
                 });
         });
-        c = 1; 
+        c = 0; 
     }
     
 });
