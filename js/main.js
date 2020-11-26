@@ -2,7 +2,7 @@
 window.addEventListener('scroll', () => {
     let page = window;
     let pageTop = window.scrollY;
-    let pageHeight = window.innerHeight - 0.9;
+    let pageHeight = window.innerHeight / 0.9;
 
     let frames = document.querySelectorAll('.scrollAnim');
     frames.forEach((frame) => {
