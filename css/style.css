@@ -878,7 +878,7 @@ h6.foot-tag {
     height: 100%;
     opacity: 0;
     transition: 0.9s;
-    transition-delay: 0.4s all;
+    transition-delay: 0.8s all;
     /* margin: 24px auto; */
 }
 
@@ -1086,7 +1086,7 @@ h1 {
     font-weight: 700;
     font-size: 118px;
     margin: 5% 0;
-    transition: 0.6s;
+    transition: 0.9s;
     display: block;
     padding: 0;
     line-height: 120%;
@@ -1100,7 +1100,7 @@ h1 {
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
-    transition: 0.4s;
+    transition: 0.8s;
     margin: 5% 0;
     line-height: 240px;
 }
@@ -1108,28 +1108,28 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 78px;
-    transition: 0.4s;
+    transition: 0.8s;
     display: inline;
 }
 h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 44px;
-    transition: all 0.4s;
+    transition: all 0.6s;
     display: inline;
 }
 h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    transition: all 0.4s;
+    transition: all 0.6s;
     margin-top: 5% 0;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    transition: all 0.4s;
+    transition: all 0.6s;
     color: #58585B;
     line-height: 150%;
     margin: 3% 0;
@@ -1138,7 +1138,7 @@ h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    transition: 0.4s;
+    transition: 0.8s;
     color: #58585B;
 
 }
@@ -1181,7 +1181,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 60px;
-    transition: 0.5s;
+    transition: 0.8s;
     display: inline;
 }
 h3 {
@@ -1195,14 +1195,14 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    transition: all 0.5s;
+    transition: all 0.8s;
     margin-top: 5% 0;
 }
 p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    transition: all 0.5s;
+    transition: all 0.8s;
     color: #58585B;
     line-height: 150%;
     margin: 3% 0;
@@ -1211,7 +1211,7 @@ h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    transition: 0.5s;
+    transition: 0.8s;
     color: #58585B;
 
 }
@@ -1276,7 +1276,7 @@ h5 {
         /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 3px;
         -webkit-text-stroke-color: #fff;
-        transition: 0.5s;
+        transition: 0.8s;
         margin: 5% 0;
         line-height: 240px;
     }
@@ -1284,28 +1284,28 @@ h5 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         font-size: 60px;
-        transition: 0.5s;
+        transition: 0.8s;
         display: inline;
     }
     h3 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
         font-size: 56px;
-        transition: all 0.5s;
+        transition: all 0.8s;
         display: inline;
     }
     h4 {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 18px;
-        transition: all 0.5s;
+        transition: all 0.8s;
         margin-top: 5% 0;
     }
     p {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 16px;
-        transition: all 0.5s;
+        transition: all 0.8s;
         color: #58585B;
         line-height: 150%;
         margin: 3% 0;
@@ -1314,7 +1314,7 @@ h5 {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 13px;
-        transition: 0.5s;
+        transition: 0.8s;
         color: #58585B;
     
     }
@@ -1667,7 +1667,7 @@ figcaption {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    transition: all 0.4s;
+    transition: all 0.6s;
     color: #9064AA;
     line-height: 150%;
     margin: 7% 0;   
@@ -1902,11 +1902,7 @@ a {
 #section05 > div:nth-child(2) > div.body-link.p-24 > div > a > div {
     padding-bottom: 5%;
 }
-/* 
-#section02 > div:nth-child(40) > div.row.imagebg-b > div {
-    display: flex;
-    flex-direction: column;
-} */
+
 /* TYPE */
 h1 {
     font-family: 'Poppins', sans-serif;

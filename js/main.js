@@ -2,7 +2,7 @@
 window.addEventListener('scroll', () => {
     let page = this;
     let pageTop = this.scrollY;
-    let pageHeight = this.outerHeight + 1;
+    let pageHeight = this.outerHeight / 1;
 
     let frames = document.querySelectorAll('.scrollAnim');
     frames.forEach((frame) => {
@@ -33,9 +33,9 @@ $(window).scroll(function() {
     var b = 1;
     var c = 1;
 
-    var oTop = $('#counter-box1').offset().top + window.innerHeight;
-    var mTop = $('#counter-box4').offset().top + window.innerHeight;
-    var nTop = $('#counter-box9').offset().top + window.innerHeight;
+    var oTop = $('#counter-box1').offset().top - window.innerHeight;
+    var mTop = $('#counter-box4').offset().top - window.innerHeight;
+    var nTop = $('#counter-box9').offset().top - window.innerHeight;
     if (a == 1 && $(window).scrollTop() > oTop) {
         $('.counter').each(function() {
             var $this = $(this),
