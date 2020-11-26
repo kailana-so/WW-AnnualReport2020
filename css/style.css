@@ -818,7 +818,7 @@ h6.foot-tag {
     margin: 5% auto;
     padding-top: 5%;
     max-width: 600px;
-    max-height: 350px;
+    height: 50px;
 }
 
 .circle-bg {
@@ -1968,10 +1968,17 @@ a {
     font-size: 9px;
 }
 .single-chart {
-    width: 90px;
+    width: 80px;
     padding: 2% 5%;
     justify-content: space-evenly;
     text-align: center;
+}
+.circular-chart {
+    display: block;
+    margin: 5% auto;
+    padding-top: 5%;
+    max-width: 300px;
+    max-height: 200px;
 }
 
 .row-stats {
@@ -2100,7 +2107,7 @@ figcaption {
     margin: 7% 0;
 }
 .body-item {
-    width: 60%;
+    width: 65%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -2109,8 +2116,8 @@ figcaption {
 
 .static-chart-2,
 .static-chart-1{
-    width: 250px;
-    height: 140px;
+    width: 220px;
+    height: 110px;
     background-image: url(../imgs/growth.png);
     background-size: cover;
     background-position-x: center;
