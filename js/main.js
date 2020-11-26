@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
 
         if (
             pageTop >= frameTop - pageHeight &&
-            pageTop < frameTop + frameHeight / 0.8
+            pageTop < frameTop + frameHeight / 2
         ) {
             frame.classList.add('anim');
             // document.getElementById('box1').classList.add('fade-in');
@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
             // console.log("yup");
         } else {
             frame.classList.remove('anim');
-            
+
             // document.getElementById('box1').classList.remove('fade-in');
             // document.getElementById('box2').classList.remove('open-right');
         }
