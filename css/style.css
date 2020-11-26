@@ -1874,7 +1874,8 @@ a {
 
 }
 .main-title {
-    margin: 4% 10%;
+    padding-top: 15%;
+    margin: 6% 10%;
     text-align: left;
     justify-content: center;
 }
