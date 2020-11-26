@@ -2,7 +2,7 @@
 window.addEventListener('scroll', () => {
     let page = this;
     let pageTop = this.scrollY;
-    let pageHeight = this.outerHeight / 1.5;
+    let pageHeight = this.outerHeight / 0.8;
 
     let frames = document.querySelectorAll('.scrollAnim');
     frames.forEach((frame) => {
@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
         let frameHeight = frame.offsetHeight;
 
         if (
-            pageTop >= frameTop + pageHeight &&
+            pageTop >= frameTop - pageHeight &&
             pageTop < frameTop + frameHeight / 0.8
         ) {
             frame.classList.add('anim');
